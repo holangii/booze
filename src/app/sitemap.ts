@@ -2,10 +2,11 @@ import { publicUrl } from "@/env.mjs";
 import StoreConfig from "@/store.config";
 import * as Commerce from "commerce-kit";
 import type { MetadataRoute } from "next";
+import { products } from "./objects/products";
 
 type Item = MetadataRoute.Sitemap[number];
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-	const products = await Commerce.productBrowse({ first: 100 });
+	// const products = await Commerce.productBrowse({ first: 100 });
 	const productUrls = products.map(
 		(product) =>
 			({

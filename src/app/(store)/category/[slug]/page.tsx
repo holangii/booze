@@ -5,15 +5,16 @@ import { ProductList } from "@/ui/products/product-list";
 import * as Commerce from "commerce-kit";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next/types";
+import { products } from "@/app/objects/products";
 
 export const generateMetadata = async (props: {
 	params: Promise<{ slug: string }>;
 }): Promise<Metadata> => {
 	const params = await props.params;
-	const products = await Commerce.productBrowse({
-		first: 100,
-		filter: { category: params.slug },
-	});
+	// const products = await Commerce.productBrowse({
+	// 	first: 100,
+	// 	filter: { category: params.slug },
+	// });
 
 	if (products.length === 0) {
 		return notFound();
@@ -31,10 +32,10 @@ export default async function CategoryPage(props: {
 	params: Promise<{ slug: string }>;
 }) {
 	const params = await props.params;
-	const products = await Commerce.productBrowse({
-		first: 100,
-		filter: { category: params.slug },
-	});
+	// const products = await Commerce.productBrowse({
+	// 	first: 100,
+	// 	filter: { category: params.slug },
+	// });
 
 	if (products.length === 0) {
 		return notFound();
