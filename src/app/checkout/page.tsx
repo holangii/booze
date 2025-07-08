@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useCart } from '../../contexts/CartContext';
 import { Header } from '@/components/Header';
 
@@ -76,7 +77,7 @@ export default function CheckoutPage() {
                 ))}
                 <div className="border-t pt-3 flex justify-between items-center font-semibold">
                   <span>Total</span>
-                  <span className="text-blue-600">${getTotalPrice().toFixed(2)}</span>
+                  <span className="text-[#C97F17]">${getTotalPrice().toFixed(2)}</span>
                 </div>
               </div>
             </div>
@@ -84,7 +85,7 @@ export default function CheckoutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/" 
-                className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+                className="bg-[#C97F17] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
               >
                 Continue Shopping
               </Link>
@@ -117,7 +118,7 @@ export default function CheckoutPage() {
             <p className="text-gray-600 mb-8">Add some products to your cart before checking out.</p>
             <Link 
               href="/" 
-              className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
+              className="bg-[#C97F17] text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300"
             >
               Start Shopping
             </Link>
@@ -149,11 +150,15 @@ export default function CheckoutPage() {
               <div className="space-y-6">
                 {items.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 pb-6 border-b border-gray-200 last:border-b-0 last:pb-0">
-                    {/* Product Image Placeholder */}
-                    <div className="w-20 h-20 bg-gray-200 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <svg className="w-10 h-10 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
+                    {/* Product Image */}
+                    <div className="w-20 h-20 bg-gray-200 rounded-lg overflow-hidden flex-shrink-0">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
 
                     {/* Product Details */}
@@ -162,7 +167,7 @@ export default function CheckoutPage() {
                       <div className="flex items-center mt-2">
                         <span className="text-sm text-gray-600">Qty: {item.quantity}</span>
                         <span className="mx-2 text-gray-400">•</span>
-                        <span className="text-sm font-medium text-blue-600">${item.price.toFixed(2)} each</span>
+                        <span className="text-sm font-medium text-[#C97F17]">${item.price.toFixed(2)} each</span>
                       </div>
                     </div>
 
@@ -195,7 +200,7 @@ export default function CheckoutPage() {
                 </div>
                 <div className="flex justify-between text-lg font-semibold pt-3 border-t border-gray-200">
                   <span className="text-gray-900">Total</span>
-                  <span className="text-blue-600">${(getTotalPrice() * 1.08).toFixed(2)}</span>
+                  <span className="text-[#C97F17]">${(getTotalPrice() * 1.08).toFixed(2)}</span>
                 </div>
               </div>
 
@@ -222,7 +227,7 @@ export default function CheckoutPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition duration-300 flex items-center justify-center space-x-2"
+                  className="w-full bg-[#C97F17] text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition duration-300 flex items-center justify-center space-x-2"
                 >
                   {isSubmitting ? (
                     <>

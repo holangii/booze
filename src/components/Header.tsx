@@ -42,11 +42,11 @@ export const Header = () => {
 				<div className="ml-auto flex items-center space-x-4">
 					<button 
 						onClick={openCart}
-						className="text-gray-700 hover:text-blue-600 relative hover:cursor-pointer"
+						className="text-gray-700 hover:text-[#C97F17] relative hover:cursor-pointer"
 					>
 						<ShoppingCart className="w-6 h-6 text-slate-700" aria-label="Cart" />
 						{getTotalItems() > 0 && (
-							<span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
+							<span className="absolute -top-2 -right-2 bg-[#C97F17] text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">
 								{getTotalItems()}
 							</span>
 						)}

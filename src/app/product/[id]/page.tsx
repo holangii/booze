@@ -26,7 +26,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Product Not Found</h2>
-          <Link href="/" className="text-blue-600 hover:text-blue-800">
+          <Link href="/" className="text-[#C97F17] hover:text-blue-800">
             ← Back to Home
           </Link>
         </div>
@@ -77,14 +77,13 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                     selectedImage === index ? 'border-blue-500' : 'border-transparent hover:border-gray-300'
                   }`}
                 >
-                  <div className="w-full h-full flex items-center justify-center">
-                    <div className="text-gray-500 text-center">
-                      <svg className="w-8 h-8 mx-auto mb-1" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-xs">{index + 1}</p>
-                    </div>
-                  </div>
+                  <Image
+                    src={image}
+                    alt={`${product.name} - Image ${index + 1}`}
+                    width={150}
+                    height={150}
+                    className="w-full h-full object-contain"
+                  />
                 </button>
               ))}
             </div>
@@ -95,7 +94,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             {/* Product Name and Price */}
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
-              <p className="text-2xl font-bold text-blue-600">${product.price}</p>
+              <p className="text-2xl font-bold text-[#C97F17]">${product.price}</p>
             </div>
 
             {/* Rum Info Component */}
@@ -150,7 +149,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             <div className="pt-4">
               <button
                 onClick={handleAddToCart}
-                className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center space-x-2"
+                className="w-full bg-[#C97F17] text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center space-x-2"
               >
                 <ShoppingCart className="w-5 h-5" />
                 <span>Add {quantity} to Cart</span>

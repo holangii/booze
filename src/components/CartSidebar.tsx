@@ -3,6 +3,7 @@
 import React from 'react';
 import { useCart } from '../contexts/CartContext';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ShoppingCart } from 'lucide-react';
 
 const CartSidebar: React.FC = () => {
@@ -60,17 +61,21 @@ const CartSidebar: React.FC = () => {
               <div className="space-y-4">
                 {items.map((item) => (
                   <div key={item.id} className="flex items-center space-x-4 bg-gray-50 p-3 rounded-lg">
-                    {/* Product Image Placeholder */}
-                    <div className="w-16 h-16 bg-gray-200 rounded-md flex items-center justify-center flex-shrink-0">
-                      <svg className="w-8 h-8 text-gray-400" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                      </svg>
+                    {/* Product Image */}
+                    <div className="w-16 h-16 bg-gray-200 rounded-md overflow-hidden flex-shrink-0">
+                      <Image
+                        src={item.image}
+                        alt={item.name}
+                        width={64}
+                        height={64}
+                        className="w-full h-full object-contain"
+                      />
                     </div>
 
                     {/* Product Details */}
                     <div className="flex-1 min-w-0">
                       <h4 className="text-sm font-medium text-gray-900 truncate">{item.name}</h4>
-                      <p className="text-sm font-semibold text-blue-600">${item.price.toFixed(2)}</p>
+                      <p className="text-sm font-semibold text-[#C97F17]">${item.price.toFixed(2)}</p>
                     </div>
 
                     {/* Quantity Controls */}
@@ -119,12 +124,12 @@ const CartSidebar: React.FC = () => {
               {/* Total */}
               <div className="flex justify-between items-center text-lg font-semibold text-slate-900">
                 <span>Total:</span>
-                <span className="text-blue-600">${getTotalPrice().toFixed(2)}</span>
+                <span className="text-[#C97F17]">${getTotalPrice().toFixed(2)}</span>
               </div>
 
               {/* Checkout Button */}
               <Link href="/checkout">
-                <button className="w-full bg-blue-600 text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors  hover:cursor-pointer">
+                <button className="w-full bg-[#C97F17] text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors  hover:cursor-pointer">
                   Proceed to Checkout
                 </button>
               </Link>

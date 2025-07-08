@@ -32,7 +32,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
             <p className="text-gray-600 mb-8">The category you&apos;re looking for doesn&apos;t exist.</p>
             <Link 
               href="/" 
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+              className="bg-[#C97F17] text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
             >
               ← Back to Home
             </Link>
@@ -77,7 +77,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
       </section>
       
       {/* Page Header */}
-      {/* <div className="bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+      {/* <div className="bg-gradient-to-r from-[#C97F17] to-purple-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -98,7 +98,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
       {/* Breadcrumb Navigation */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-4">
         <nav className="flex text-xs sm:text-sm text-gray-500">
-          <Link href="/" className="hover:text-blue-600 transition-colors">
+          <Link href="/" className="hover:text-[#C97F17] transition-colors">
             Home
           </Link>
           <span className="mx-1 sm:mx-2">›</span>
@@ -112,11 +112,11 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
           {category.products.map((product) => (
             <div 
               key={product.id} 
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group"
+              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group flex flex-col h-96 sm:h-112"
             >
-              <Link href={`/product/${product.id}`} className="block">
+              <Link href={`/product/${product.id}`} className="block flex-shrink-0">
                 <Image
-                  className="w-full h-full bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-48 sm:h-56 bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
                   src={product.image}
                   width={768}
                   height={768}
@@ -125,22 +125,27 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
                 />
               </Link>
               
-              <div className="p-2 sm:p-4">
+              <div className="p-2 sm:p-4 flex flex-col flex-grow">
                 <Link href={`/product/${product.id}`}>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2 hover:text-blue-600 transition-colors cursor-pointer line-clamp-2">
+                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2 hover:text-[#C97F17] transition-colors cursor-pointer line-clamp-2">
                     {product.name}
                   </h3>
                 </Link>
                 
-                <div className="flex items-center justify-between mb-2 sm:mb-3">
-                  <span className="text-lg sm:text-2xl font-bold text-blue-600">
-                    ${product.price}
-                  </span>
-                </div>
+                {/* Spacer to push price and description to bottom */}
+                <div className="flex-grow"></div>
                 
-                <p className="text-gray-600 text-xs sm:text-sm mb-2 sm:mb-4 line-clamp-2 sm:line-clamp-3">
-                  {product.description}
-                </p>
+                <div className="mt-auto">
+                  <div className="flex items-center justify-between mb-2 sm:mb-3">
+                    <span className="text-lg sm:text-2xl font-bold text-[#C97F17]">
+                      ${product.price}
+                    </span>
+                  </div>
+                  
+                  <p className="text-gray-600 text-xs sm:text-sm line-clamp-2 sm:line-clamp-3">
+                    {product.description}
+                  </p>
+                </div>
               </div>
             </div>
           ))}
@@ -156,7 +161,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
             <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">This category doesn&apos;t have any products yet.</p>
             <Link 
               href="/" 
-              className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-sm sm:text-base"
+              className="bg-[#C97F17] text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-sm sm:text-base"
             >
               Browse All Categories
             </Link>

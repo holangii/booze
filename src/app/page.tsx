@@ -71,10 +71,10 @@ function HomePage() {
               Shop the latest trends with unbeatable prices and quality
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+              <button className="bg-white text-[#C97F17] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
                 Shop Now
               </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+              <button className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-[#C97F17] transition duration-300">
                 Learn More
               </button>
             </div>
@@ -117,7 +117,7 @@ function HomePage() {
           <div key={category.name} className="mb-16">
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-bold text-gray-900">{category.name}</h3>
-              <Link href={`/category/${category.name}`} className="text-blue-600 hover:text-blue-800 font-medium">
+              <Link href={`/category/${category.name}`} className="text-[#C97F17] hover:text-blue-800 font-medium">
                 View All →
               </Link>
             </div>
@@ -138,9 +138,9 @@ function HomePage() {
                   </Link>
                   <div className="p-4">
                     <Link href={`/product/${product.id}`}>
-                      <h4 className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors cursor-pointer">{product.name}</h4>
+                      <h4 className="text-lg font-semibold text-gray-900 mb-2 hover:text-[#C97F17] transition-colors cursor-pointer">{product.name}</h4>
                     </Link>
-                    <p className="text-xl font-bold text-blue-600 mb-3">${product.price}</p>
+                    <p className="text-xl font-bold text-[#C97F17] mb-3">${product.price}</p>
                     <div className="flex gap-2">
                       <Link href={`/product/${product.id}`} className="flex-1">
                         <button className="w-full bg-gray-100 text-gray-800 py-2 px-4 rounded-lg hover:bg-gray-200 transition duration-300">
@@ -149,7 +149,7 @@ function HomePage() {
                       </Link>
                       <button 
                         onClick={() => handleAddToCart(product)}
-                        className="flex-1 bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
+                        className="flex-1 bg-[#C97F17] text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-300"
                       >
                         Add to Cart
                       </button>
@@ -174,14 +174,14 @@ function HomePage() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Enter your email" 
-                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900"
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C97F17] text-slate-900"
                 disabled={isSubscribing}
                 required
               />
               <button 
                 type="submit"
                 disabled={isSubscribing || !email}
-                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
+                className="bg-[#C97F17] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
                 {isSubscribing ? 'Subscribing...' : 'Subscribe'}
               </button>
