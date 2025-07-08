@@ -7,6 +7,7 @@ export type Product = {
   category: string;
   description: string;
   contenance?: string;
+  alcohol_type?: string;
   alcool?: string;
   origin?: string;
 };
@@ -26,6 +27,7 @@ export const productsByCategories: {
         contenance: "0.50L",
         alcool: "30%",
         origin: "Réunion",
+        alcohol_type: "Arrangé",
         allImages: [
           "/isautier_volcanique.webp",
         ],
@@ -41,6 +43,7 @@ export const productsByCategories: {
         allImages: [
           "/isautier_cafe_vanille.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.70L",
         alcool: "40%",
@@ -56,6 +59,7 @@ export const productsByCategories: {
           "isautier_mangue.webp",
           "/isautier_mangue_caramelisee.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.50L",
         alcool: "37%",
@@ -70,6 +74,7 @@ export const productsByCategories: {
         allImages: [
           "/isautier_mandarine_sauvage.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.50L",
         alcool: "40%",
@@ -84,6 +89,7 @@ export const productsByCategories: {
         allImages: [
           "/Isautier-Tropical.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.70L",
         alcool: "30%",
@@ -98,6 +104,7 @@ export const productsByCategories: {
         allImages: [
           "/isautier_banane.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.70L",
         alcool: "30%",
@@ -112,6 +119,7 @@ export const productsByCategories: {
         allImages: [
           "/isautier_gingembre_citron.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.70L",
         alcool: "30%",
@@ -126,6 +134,7 @@ export const productsByCategories: {
         allImages: [
           "/Isautier-Arrange-Oceanique-coco-vanille-2.webp",
         ],
+        alcohol_type: "Arrangé",
         category: "Isautier",
         contenance: "0.70L",
         alcool: "30%",
@@ -138,44 +147,122 @@ export const productsByCategories: {
     name: "Trois Rivieres",
     products: [
       {
-        id: 5,
-        name: "Cotton T-Shirt",
-        price: 29.99,
-        image: "/mangue.png",
-        allImages: ["/mangue.png", "/mangue.png", "/mangue.png"],
-        category: "Fashion",
-        description:
-          "Crafted from premium organic cotton, this versatile t-shirt offers unmatched comfort and style. The breathable fabric and relaxed fit make it perfect for everyday wear, while the reinforced stitching ensures long-lasting durability. Available in multiple colors to suit your style.",
+        id: 10,
+        name: "55 Origines",
+        price: 26.50,
+        image: "/55_origines.webp",
+        allImages: ["/55_origines.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Blanc",
+        alcool: "55%",
+        origin: "Martinique",
+        description: "La référence de la gamme a été repensée à travers un processus de réduction tout en douceur. Exit le brassage mécanique généralement utilisé. Daniel Baudin, le maître de chai, a mis en place une réduction goutte par goutte sur une durée de 5 mois afin de garder la richesse aromatique du jus."
       },
       {
-        id: 6,
-        name: "Denim Jeans",
-        price: 79.99,
-        image: "/mangue.png",
-        allImages: ["/mangue.png", "/mangue.png", "/mangue.png"],
-        category: "Fashion",
+        id: 11,
+        name: "Cannes brûlées",
+        price: 29.50,
+        image: "/cannes_brulees.webp",
+        allImages: ["/cannes_brulees.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Paille",
+        alcool: "43%",
+        origin: "Martinique",
         description:
-          "Classic denim jeans made from high-quality stretch denim that moves with you. The perfect balance of style and comfort, featuring a modern fit and vintage-inspired washing. Reinforced pocket bags and durable hardware ensure these jeans will be your go-to pair for years to come.",
+          "Cette référence est un rhum parcellaire, provenant de la parcelle Figuier située à Rivière Salée, et monovarietal : la canne roseau. Les cannes ont été brûlées face au vent et jusqu’à mi-hauteur pour ralentir la propagation des flammes.",
       },
       {
-        id: 7,
-        name: "Sneakers",
-        price: 129.99,
-        image: "/mangue.png",
-        allImages: ["/mangue.png", "/mangue.png", "/mangue.png"],
-        category: "Fashion",
-        description:
-          "Step into comfort with these innovative sneakers featuring advanced cushioning technology and breathable mesh upper. The ergonomic design provides excellent support for all-day wear, while the stylish aesthetics make them perfect for both athletic activities and casual outings.",
+        id: 12,
+        name: "Double wood",
+        price: 35.90,
+        image: "/double_wood.webp",
+        allImages: ["/double_wood.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Ambre",
+        alcool: "43%",
+        origin: "Martinique",
+        description: "Double Wood est un rhum agricole, élevé sous bois. Après une fermentation en cuves ouvertes et sa distillation en colonne créole, ce rhum passe 7 mois en foudre américain puis 9 mois en petits fûts français ayant contenu du whisky. Sa relative jeunesse le situe à mi-chemin entre un rhum blanc et un rhum vieux, il garde la fraîcheur de la canne mais développe une certaine rondeur."
       },
       {
-        id: 8,
-        name: "Baseball Cap",
-        price: 19.99,
-        image: "/mangue.png",
-        allImages: ["/mangue.png", "/mangue.png"],
-        category: "Fashion",
-        description:
-          "A timeless baseball cap crafted from durable cotton twill with an adjustable strap for the perfect fit. Features moisture-wicking sweatband and ventilation eyelets to keep you cool. The curved brim provides excellent sun protection while maintaining a classic sporty look.",
+        id: 13,
+        name: "Rhum Vieux de l’Océan",
+        price: 45.00,
+        image: "/rhum_vieux_de_l_ocean.webp",
+        allImages: ["/rhum_vieux_de_l_ocean.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Ambre",
+        alcool: "54%",
+        origin: "Martinique",
+        description: "Le Trois Rivières - Rhum Vieux de l’Océan est une cuvée audacieuse qui met en avant l’influence maritime sur le rhum martiniquais. Élaboré par la Plantation Trois Rivières, ce rhum agricole fait partie de la collection Les Éditions du Bar, destinée aux barmen et aux amateurs de créations originales. Son procédé unique de réduction à l’eau de mer, prélevée au large du Diamant et filtrée avec soin, lui confère une touche iodée distinctive."
+      },
+      {
+        id: 14,
+        name: "Cuvée de l'Ocean",
+        price: 27.00,
+        image: "/cuvee_de_l_ocean.webp",
+        allImages: ["/cuvee_de_l_ocean.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Blanc",
+        alcool: "42%",
+        origin: "Martinique",
+        description: "Trois Rivières Cuvée de l’Océan présente la caractéristique singulière d’avoir été élaborée à partir du seul jus des cannes à sucre élevées « les pieds dans l’eau » sur la parcelle ensoleillée de l’Anse Trabaud, située à l’extrême Sud de la Martinique"
+      },
+      {
+        id: 15,
+        name: "Rhum blanc 50% 1L",
+        price: 29.00,
+        image: "/rhum_blanc_50_1L.webp",
+        allImages: ["/rhum_blanc_50_1L.webp"],
+        category: "Trois Rivieres",
+        contenance: "1.00L",
+        alcohol_type: "Blanc",
+        alcool: "50%",
+        origin: "Martinique",
+        description: "Trois Rivières - Rhum blanc 50% 1L est un incontournable des rhums agricoles martiniquais. Distillé selon le cahier des charges strict de l’AOC Martinique, il séduit par sa puissance aromatique, son équilibre entre notes végétales et iodées, et sa finale douce et persistante."
+      },
+      {
+        id: 16,
+        name: "Triple Millésime 2006 - 2014 - 2016",
+        price: 69.90,
+        image: "/triple_millesime.webp",
+        allImages: ["/triple_millesime.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Ambré",
+        alcool: "42%",
+        origin: "Martinique",
+        description: "Découvrez le Trois Rivières Triple Millésime, une symphonie de millésimes rares, révélateur du génie de Daniel Baudin. La rencontre de 2006, 2014 et 2016 promet une dégustation inoubliable."
+      },
+      {
+        id: 17,
+        name: "VSOP 40°",
+        price: 49.90,
+        image: "/trois_vsop.jpeg",
+        allImages: ["/trois_vsop.jpeg"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Ambré",
+        alcool: "40%",
+        origin: "Martinique",
+        description: "Trois Rivières VSOP Réserve Spéciale se distingue par sa personalité unique, sa parfaite suavité et sa délicate opulence."
+      },
+      {
+        id: 18,
+        name: "Teeling Finish",
+        price: 49.90,
+        image: "/teeling_finish.webp",
+        allImages: ["/teeling_finish.webp"],
+        category: "Trois Rivieres",
+        contenance: "0.70L",
+        alcohol_type: "Ambré",
+        alcool: "43%",
+        origin: "Martinique",
+        description: "Trois Rivières - Teeling Finish est un rhum vieux AOC Martinique d’au moins 3 ans, bénéficiant d’une finition originale de 8 mois en ex-fûts de whiskey irlandais Teeling. Cet affinage inédit enrichit son profil avec des notes maltées qui s’harmonisent parfaitement aux arômes fruités du rhum agricole."
       },
     ],
   },
