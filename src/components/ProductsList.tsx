@@ -15,14 +15,6 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 								<article className="overflow-hidden bg-white">
 									{product.image && (
 										<div className="rounded-lg aspect-square w-full overflow-hidden bg-neutral-100">
-											{/* <Image
-												className="w-full bg-neutral-100 object-cover object-center transition-transform duration-300 group-hover:scale-105"
-												src={product.image}
-												width={768}
-												height={768}
-												sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 700px"
-												alt={product.name}
-											/> */}
                                             <Image
 												className="w-full h-full bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
 												src={product.image}
