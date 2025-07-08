@@ -99,7 +99,12 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             </div>
 
             {/* Rum Info Component */}
-            <RumInfoComponent />
+            <RumInfoComponent
+              bottleSize={product.contenance}
+              degree={product.alcool}
+              color={product.alcohol_type}
+              origin={product.origin}
+            />
 
             {/* Product Description */}
             <div>
