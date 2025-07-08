@@ -1,20 +1,12 @@
 'use client';
 
-import Image from "next/image";
 import Link from "next/link";
-import { useCart } from "../contexts/CartContext";
 import CartSidebar from "../components/CartSidebar";
 import { Header } from '@/components/Header'
 import { productsByCategories } from "@/objects/Products";
 import { ProductList } from "@/components/ProductsList";
 
 function HomePage() {
-  const { addToCart, openCart, getTotalItems } = useCart();
-
-  const handleAddToCart = (product: any) => {
-    addToCart(product);
-  };
-
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
@@ -82,7 +74,7 @@ function HomePage() {
         </div>
 
         {/* Categories */}
-        {productsByCategories.map((category, categoryIndex) => (
+        {productsByCategories.map((category) => (
           <div key={category.name} className="mb-16">
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-bold text-gray-900">{category.name}</h3>

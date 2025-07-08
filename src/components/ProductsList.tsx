@@ -1,14 +1,14 @@
 'use client'
 import Link from "next/link";
-import Image from "next/image";
 import { Product } from "@/objects/Products";
+import Image from "next/image";
 
 export const ProductList = ({ products }: { products: Product[] }) => {
 
 	return (
 		<>
 			<ul className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-				{products.map((product, idx) => {
+				{products.map((product) => {
 					return (
 						<li key={product.id} className="group">
 							<Link href={`/product/${product.id}`}>
@@ -23,7 +23,7 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 												sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 700px"
 												alt={product.name}
 											/> */}
-                                            <img
+                                            <Image
 												className="w-full bg-neutral-100 object-cover object-center transition-transform duration-300 group-hover:scale-105"
 												src={product.image}
 												width={768}

@@ -2,7 +2,6 @@
 
 import { use } from 'react';
 import Link from 'next/link';
-import { useCart } from '../../../contexts/CartContext';
 import { Header } from '@/components/Header';
 import CartSidebar from "@/components/CartSidebar";
 import { productsByCategories } from "@/objects/Products";
@@ -14,8 +13,6 @@ const CATEGORY_BANNER_IMAGES = {
 }
 
 export default function CategoryPage({ params }: { params: Promise<{ id: string }> }) {
-  const { addToCart } = useCart();
-  
   // Unwrap the params Promise
   const { id } = use(params);
 
@@ -31,7 +28,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Category Not Found</h2>
-            <p className="text-gray-600 mb-8">The category you're looking for doesn't exist.</p>
+            <p className="text-gray-600 mb-8">The category you&apos;re looking for doesn&apos;t exist.</p>
             <Link 
               href="/" 
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
@@ -45,15 +42,15 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
     );
   }
 
-  const handleAddToCart = (product: any) => {
-    addToCart({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: product.image,
-      category: product.category
-    });
-  };
+  // const handleAddToCart = (product: any) => {
+  //   addToCart({
+  //     id: product.id,
+  //     name: product.name,
+  //     price: product.price,
+  //     image: product.image,
+  //     category: product.category
+  //   });
+  // };
 
   return (
     <div className="min-h-screen bg-white">
@@ -155,7 +152,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">No products found</h3>
-            <p className="text-gray-600 mb-6">This category doesn't have any products yet.</p>
+            <p className="text-gray-600 mb-6">This category doesn&apos;t have any products yet.</p>
             <Link 
               href="/" 
               className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"

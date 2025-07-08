@@ -59,9 +59,9 @@ export default function CheckoutPage() {
               <svg className="w-24 h-24 mx-auto text-green-500 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <h1 className="text-4xl font-bold text-gray-900 mb-4">You're on the waiting list!</h1>
+              <h1 className="text-4xl font-bold text-gray-900 mb-4">You&apos;re on the waiting list!</h1>
               <p className="text-xl text-gray-600 mb-8">
-                Thank you for your interest! We'll notify you at <strong>{email}</strong> when these products become available.
+                Thank you for your interest! We&apos;ll notify you at <strong>{email}</strong> when these products become available.
               </p>
             </div>
             
@@ -215,7 +215,7 @@ export default function CheckoutPage() {
                     required
                   />
                   <p className="text-xs text-gray-500 mt-2">
-                    We'll notify you when these items become available for purchase
+                    We&apos;ll notify you when these items become available for purchase
                   </p>
                 </div>
 

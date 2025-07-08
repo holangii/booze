@@ -11,7 +11,6 @@ const CartSidebar: React.FC = () => {
     closeCart,
     updateQuantity,
     removeFromCart,
-    clearCart,
     getTotalPrice,
     getTotalItems,
   } = useCart();
