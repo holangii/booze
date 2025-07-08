@@ -24,7 +24,7 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 												alt={product.name}
 											/> */}
                                             <img
-												className="w-full bg-neutral-100 object-cover object-center transition-transform duration-300 group-hover:scale-105"
+												className="w-full h-full bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
 												src={product.image}
 												width={768}
 												height={768}

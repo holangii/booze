@@ -6,6 +6,9 @@ export type Product = {
   allImages: string[];
   category: string;
   description: string;
+  contenance?: string;
+  alcool?: string;
+  origin?: string;
 };
 
 export const productsByCategories: {
@@ -17,58 +20,103 @@ export const productsByCategories: {
     products: [
       {
         id: 1,
-        name: "Wireless Headphones",
-        price: 99.99,
-        image: "/trois.png",
+        name: "Arrangé Volcanique Goyavier Ananas Piment",
+        price: 33.00,
+        image: "/isautier_volcanique.webp",
+        contenance: "0.50L",
+        alcool: "30%",
+        origin: "Réunion",
         allImages: [
-          "/trois.png",
-          "/trois.png",
-          "/trois.png"
+          "/isautier_volcanique.webp",
         ],
-        category: "Electronics",
+        category: "Isautier",
         description:
-          "Experience unparalleled audio quality with our premium wireless headphones. Featuring advanced noise-cancellation technology, plush memory foam ear cushions, and up to 30 hours of battery life. Perfect for immersive music listening, gaming, or focused work sessions.",
+          "Cette Douceur d’Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l’honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l’île associées à celle de la banane mûrie au soleil",
       },
       {
         id: 2,
-        name: "Smart Watch",
-        price: 199.99,
-        image: "/mangue.png",
+        name: "Arrangé Café Vanille",
+        price: 25.99,
+        image: "/isautier_cafe_vanille.webp",
         allImages: [
-          "/mangue.png",
-          "/mangue.png",
-          "/mangue.png"
+          "/isautier_cafe_vanille.webp",
         ],
-        category: "Electronics",
-        description:
-          "Stay connected and track your fitness goals with this feature-packed smartwatch. Monitor your heart rate, sleep patterns, and daily activity while enjoying seamless notifications from your smartphone. Water-resistant design and customizable watch faces make this the perfect everyday companion.",
+        category: "Isautier",
+        contenance: "0.70L",
+        alcool: "40%",
+        origin: "Réunion",
+        description: "Les arômes café et vanille se marient parfaitement dans cet Arrangé original : la robustesse du café laisse place à la douceur subtile du macérât de vanille.Pour savourer pleinement notre Arrangé Café Vanille, conservez la bouteille au congélateur et servez bien frappé avec votre café !",
       },
       {
         id: 3,
-        name: "Bluetooth Speaker",
-        price: 79.99,
-        image: "/trois.png",
+        name: "Arrangé Mangue Caramélisée",
+        price: 35.00,
+        image: "/isautier_mangue.webp",
         allImages: [
-          "/trois.png",
-          "/trois.png",
-          "/trois.png"
+          "isautier_mangue.webp",
+          "/isautier_mangue_caramelisee.webp",
         ],
-        category: "Electronics",
-        description:
-          "Fill any room with rich, immersive sound using our portable Bluetooth speaker. With 360-degree audio projection, waterproof construction, and 12 hours of playtime, it's perfect for both indoor and outdoor entertainment. Easily connects to any Bluetooth-enabled device.",
+        category: "Isautier",
+        contenance: "0.50L",
+        alcool: "37%",
+        origin: "Réunion",
+        description: "Arrangé Mangue Caramélisée : L’arrangé Mangue Caramélisée est un Arrangé à base de rhum blanc, de jus de mangue et de caramel. Il est parfumé avec des arômes de vanille et de café. Il est idéal pour les soirées en famille ou en amitié.",
       },
       {
         id: 4,
-        name: "Phone Case",
-        price: 24.99,
-        image: "/trois.png",
+        name: "Arrangé Mandarine Sauvage",
+        price: 25.99,
+        image: "/isautier_mandarine_sauvage.webp",
         allImages: [
-          "/trois.png",
-          "/trois.png"
+          "/isautier_mandarine_sauvage.webp",
         ],
-        category: "Electronics",
-        description:
-          "Protect your smartphone in style with our durable and sleek phone case. Military-grade drop protection combined with a slim profile ensures your device stays safe without adding bulk. Features precise cutouts for all ports and raised edges to protect your screen and camera.",
+        category: "Isautier",
+        contenance: "0.50L",
+        alcool: "40%",
+        origin: "Réunion",
+        description: "Arrangé Mandarine Sauvage : L’arrangé Mandarine Sauvage est un Arrangé à base de rhum blanc, de jus de mandarine et de sucre. Il est parfumé avec des arômes de mandarine et de sucre. Il est idéal pour les soirées en famille ou en amitié.",
+      },
+      {
+        id: 6,
+        name: "Arrangé Tropical Combava Menthe",
+        price: 33.00,
+        image: "/Isautier-Tropical.webp",
+        allImages: [
+          "/Isautier-Tropical.webp",
+        ],
+        category: "Isautier",
+        contenance: "0.70L",
+        alcool: "30%",
+        origin: "Réunion",
+        description: "Cette Douceur d’Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l’honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l’île associées à celle de la banane mûrie au soleil."
+      },
+      {
+        id: 7,
+        name: "Arrangé Banane Flambée",
+        price: 29.00,
+        image: "/isautier_banane.webp",
+        allImages: [
+          "/isautier_banane.webp",
+        ],
+        category: "Isautier",
+        contenance: "0.70L",
+        alcool: "30%",
+        origin: "Réunion",
+        description: "Les arômes de bananes flambées se marient parfaitement dans cet Arrangé original. Pour savourer pleinement notre Arrangé Banane Flambée, conservez la bouteille au congélateur et servez bien frappé avec votre café ou patisserie !"
+      },
+      {
+        id: 8,
+        name: "Arrangé Intense Citron Gingembre",
+        price: 29.90,
+        image: "/isautier_gingembre_citron.webp",
+        allImages: [
+          "/isautier_gingembre_citron.webp",
+        ],
+        category: "Isautier",
+        contenance: "0.70L",
+        alcool: "30%",
+        origin: "Réunion",
+        description: "L’océan Indien, ses embruns marins. La Réunion, ses volcans, sa nature intense, ses sols incroyablement riches. Ici est née en 1845 la Maison Isautier, la référence des rhums de La Réunion. L’arrangé Intense comme les autres membres de la ‘Fresque de la Réunion ’"
       },
     ],
   },
