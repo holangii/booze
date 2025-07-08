@@ -2,6 +2,7 @@
 
 import { use } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Header } from '@/components/Header';
 import CartSidebar from "@/components/CartSidebar";
 import { productsByCategories } from "@/objects/Products";
@@ -114,7 +115,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
               className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group"
             >
               <Link href={`/product/${product.id}`} className="block">
-                <img
+                <Image
                   className="w-full h-full bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
                   src={product.image}
                   width={768}

@@ -32,7 +32,7 @@ export const Header = () => {
 		<header className="z-50 py-4 sticky top-0 bg-white/90 backdrop-blur-xs nav-border-reveal">
 			<div className="mx-auto flex max-w-7xl items-center gap-2 px-4 flex-row sm:px-6 lg:px-8 text-slate-600">
 				<Link href="/" className="flex items-center gap-2">
-					<Image src="/mashija_drink_logo.png" alt="Mashija Logo" className="h-14 w-auto" />
+					<Image src="/mashija_drink_logo.png" alt="Mashija Logo" className="h-14 w-auto" width={100} height={100} />
 					<h1 className="-mt-0.5 whitespace-nowrap text-xl font-bold">Mashija</h1>
 				</Link>
 

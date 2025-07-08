@@ -118,6 +118,20 @@ export const productsByCategories: {
         origin: "Réunion",
         description: "L’océan Indien, ses embruns marins. La Réunion, ses volcans, sa nature intense, ses sols incroyablement riches. Ici est née en 1845 la Maison Isautier, la référence des rhums de La Réunion. L’arrangé Intense comme les autres membres de la ‘Fresque de la Réunion ’"
       },
+      {
+        id: 9,
+        name: "Arrangé Océanique Coco Vanille",
+        price: 29.90,
+        image: "/Isautier-Arrange-Oceanique-coco-vanille-2.webp",
+        allImages: [
+          "/Isautier-Arrange-Oceanique-coco-vanille-2.webp",
+        ],
+        category: "Isautier",
+        contenance: "0.70L",
+        alcool: "30%",
+        origin: "Réunion",
+        description: "Cette Douceur d’Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l’honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l’île associées à celle de la banane mûrie au soleil."
+      },
     ],
   },
   {
