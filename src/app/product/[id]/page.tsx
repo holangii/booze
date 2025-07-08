@@ -82,6 +82,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                     alt={`${product.name} - Image ${index + 1}`}
                     width={150}
                     height={150}
+                    priority={true}
                     className="w-full h-full object-contain"
                   />
                 </button>
