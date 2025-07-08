@@ -7,7 +7,7 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 
 	return (
 		<>
-			<ul className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
+			<ul className="mt-6 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
 				{products.map((product) => {
 					return (
 						<li key={product.id} className="group">
@@ -20,7 +20,7 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 												src={product.image}
 												width={768}
 												height={768}
-												sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 700px"
+												sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
 												alt={product.name}
 											/>
 										</div>

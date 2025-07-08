@@ -58,7 +58,7 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
       <Header />
 
       <section
-        className="my-8 max-w-7xl mx-auto flex justify-center items-center rounded-lg py-8 sm:py-12"
+        className="my-4 sm:my-8 max-w-7xl mx-auto flex justify-center items-center rounded-lg py-6 sm:py-8 md:py-12"
         style={{
           backgroundImage: `url(${CATEGORY_BANNER_IMAGES[id as keyof typeof CATEGORY_BANNER_IMAGES]})`,
           backgroundSize: "cover",
@@ -66,12 +66,12 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-8 px-8 sm:px-16 py-16 md:grid-cols-2 rounded-lg relative">
+        <div className="mx-auto grid grid-cols-1 items-center justify-items-center gap-4 sm:gap-8 px-4 sm:px-8 md:px-16 py-8 sm:py-12 md:py-16 md:grid-cols-2 rounded-lg relative">
           <div className="absolute inset-0 bg-white/20 rounded-lg pointer-events-none" aria-hidden="true"></div>
           {/* Overlay for text visibility */}
-          <div className="max-w-md space-y-4 relative z-10">
-            <h2 className="text-white text-3xl font-bold tracking-tight md:text-4xl">{"Discover Out Latest Selection"}</h2>
-            <p className="text-white">{"Explore our carefully selected products for your alcoholism."}</p>
+          <div className="max-w-md space-y-2 sm:space-y-4 relative z-10">
+            <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">{"Discover Out Latest Selection"}</h2>
+            <p className="text-white text-sm sm:text-base">{"Explore our carefully selected products for your alcoholism."}</p>
           </div>
         </div>
       </section>
@@ -96,19 +96,19 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
       </div> */}
 
       {/* Breadcrumb Navigation */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <nav className="flex text-sm text-gray-500">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 sm:py-4">
+        <nav className="flex text-xs sm:text-sm text-gray-500">
           <Link href="/" className="hover:text-blue-600 transition-colors">
             Home
           </Link>
-          <span className="mx-2">›</span>
+          <span className="mx-1 sm:mx-2">›</span>
           <span className="text-gray-900 font-medium">{category.name}</span>
         </nav>
       </div>
 
       {/* Products Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-16">
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
           {category.products.map((product) => (
             <div 
               key={product.id} 
@@ -125,20 +125,20 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
                 />
               </Link>
               
-              <div className="p-4">
+              <div className="p-2 sm:p-4">
                 <Link href={`/product/${product.id}`}>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2 hover:text-blue-600 transition-colors cursor-pointer line-clamp-2">
+                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2 hover:text-blue-600 transition-colors cursor-pointer line-clamp-2">
                     {product.name}
                   </h3>
                 </Link>
                 
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-2xl font-bold text-blue-600">
+                <div className="flex items-center justify-between mb-2 sm:mb-3">
+                  <span className="text-lg sm:text-2xl font-bold text-blue-600">
                     ${product.price}
                   </span>
                 </div>
                 
-                <p className="text-gray-600 text-sm mb-4 line-clamp-3">
+                <p className="text-gray-600 text-xs sm:text-sm mb-2 sm:mb-4 line-clamp-2 sm:line-clamp-3">
                   {product.description}
                 </p>
               </div>
@@ -148,15 +148,15 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
 
         {/* Empty State */}
         {category.products.length === 0 && (
-          <div className="text-center py-16">
-            <svg className="w-24 h-24 mx-auto text-gray-300 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <div className="text-center py-8 sm:py-16">
+            <svg className="w-16 sm:w-24 h-16 sm:h-24 mx-auto text-gray-300 mb-4 sm:mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
             </svg>
-            <h3 className="text-xl font-semibold text-gray-900 mb-2">No products found</h3>
-            <p className="text-gray-600 mb-6">This category doesn&apos;t have any products yet.</p>
+            <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-1 sm:mb-2">No products found</h3>
+            <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">This category doesn&apos;t have any products yet.</p>
             <Link 
               href="/" 
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+              className="bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg hover:bg-blue-700 transition duration-300 text-sm sm:text-base"
             >
               Browse All Categories
             </Link>
