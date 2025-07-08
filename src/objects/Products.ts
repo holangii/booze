@@ -56,7 +56,7 @@ export const productsByCategories: {
         price: 35.00,
         image: "/isautier_mangue.webp",
         allImages: [
-          "isautier_mangue.webp",
+          "/isautier_mangue.webp",
           "/isautier_mangue_caramelisee.webp",
         ],
         alcohol_type: "Arrangé",

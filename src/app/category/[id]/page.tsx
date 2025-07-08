@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Header } from '@/components/Header';
 import CartSidebar from "@/components/CartSidebar";
 import { productsByCategories } from "@/objects/Products";
+import { ProductList } from '@/components/ProductsList';
 
 const CATEGORY_BANNER_IMAGES = {
   "Isautier": "/isautier_fresque.jpg",
@@ -108,49 +109,8 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
 
       {/* Products Grid */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8 sm:pb-16">
-        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-6">
-          {category.products.map((product) => (
-            <div 
-              key={product.id} 
-              className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group flex flex-col h-96 sm:h-112"
-            >
-              <Link href={`/product/${product.id}`} className="block flex-shrink-0">
-                <Image
-                  className="w-full h-48 sm:h-56 bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
-                  src={product.image}
-                  width={768}
-                  height={768}
-                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 700px"
-                  alt={product.name}
-                />
-              </Link>
-              
-              <div className="p-2 sm:p-4 flex flex-col flex-grow">
-                <Link href={`/product/${product.id}`}>
-                  <h3 className="text-sm sm:text-lg font-semibold text-gray-900 mb-1 sm:mb-2 hover:text-[#C97F17] transition-colors cursor-pointer line-clamp-2">
-                    {product.name}
-                  </h3>
-                </Link>
-                
-                {/* Spacer to push price and description to bottom */}
-                <div className="flex-grow"></div>
-                
-                <div className="mt-auto">
-                  <div className="flex items-center justify-between mb-2 sm:mb-3">
-                    <span className="text-lg sm:text-2xl font-bold text-[#C97F17]">
-                      ${product.price}
-                    </span>
-                  </div>
-                  
-                  <p className="text-gray-600 text-xs sm:text-sm line-clamp-2 sm:line-clamp-3">
-                    {product.description}
-                  </p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
+        <ProductList products={category.products} />
+       
         {/* Empty State */}
         {category.products.length === 0 && (
           <div className="text-center py-8 sm:py-16">
