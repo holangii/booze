@@ -9,7 +9,7 @@ export type Product = {
   contenance?: string;
   alcohol_type?: string;
   alcool?: string;
-  origin?: string;
+  origin?: "Martinique" | "Réunion";
 };
 
 export const productsByCategories: {
@@ -24,7 +24,7 @@ export const productsByCategories: {
         name: "Arrangé Volcanique Goyavier Ananas Piment",
         price: 33.00,
         image: "/isautier_volcanique.webp",
-        contenance: "0.50L",
+        contenance: "0.70L",
         alcool: "30%",
         origin: "Réunion",
         alcohol_type: "Arrangé",
