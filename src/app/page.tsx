@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from "react";
 import Link from "next/link";
 import CartSidebar from "../components/CartSidebar";
 import { Header } from '@/components/Header'
@@ -7,6 +8,44 @@ import { productsByCategories } from "@/objects/Products";
 import { ProductList } from "@/components/ProductsList";
 
 function HomePage() {
+  const [email, setEmail] = useState('');
+  const [isSubscribing, setIsSubscribing] = useState(false);
+  const [subscriptionStatus, setSubscriptionStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  const handleNewsletterSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    if (!email || !email.includes('@')) {
+      setSubscriptionStatus('error');
+      return;
+    }
+
+    setIsSubscribing(true);
+    setSubscriptionStatus('idle');
+
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/booze/newsletter`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setSubscriptionStatus('success');
+        setEmail('');
+      } else {
+        setSubscriptionStatus('error');
+      }
+    } catch (error) {
+      console.error('Newsletter subscription error:', error);
+      setSubscriptionStatus('error');
+    } finally {
+      setIsSubscribing(false);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Navbar */}
@@ -128,16 +167,34 @@ function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h3 className="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h3>
           <p className="text-gray-600 mb-8">Subscribe to our newsletter for the latest products and exclusive offers</p>
-          <div className="max-w-md mx-auto flex gap-2">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900"
-            />
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
-              Subscribe
-            </button>
-          </div>
+          <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto">
+            <div className="flex gap-2 mb-4">
+              <input 
+                type="email" 
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email" 
+                className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 text-slate-900"
+                disabled={isSubscribing}
+                required
+              />
+              <button 
+                type="submit"
+                disabled={isSubscribing || !email}
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
+              >
+                {isSubscribing ? 'Subscribing...' : 'Subscribe'}
+              </button>
+            </div>
+            
+            {/* Status Messages */}
+            {subscriptionStatus === 'success' && (
+              <p className="text-green-600 text-sm">Successfully subscribed to our newsletter!</p>
+            )}
+            {subscriptionStatus === 'error' && (
+              <p className="text-red-600 text-sm">Failed to subscribe. Please check your email and try again.</p>
+            )}
+          </form>
         </div>
       </div>
 
