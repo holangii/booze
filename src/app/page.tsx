@@ -78,7 +78,7 @@ function HomePage() {
           <div key={category.name} className="mb-16">
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-bold text-gray-900">{category.name}</h3>
-              <Link href={`/category/${category.name.toLowerCase()}`} className="text-blue-600 hover:text-blue-800 font-medium">
+              <Link href={`/category/${category.name}`} className="text-blue-600 hover:text-blue-800 font-medium">
                 View All →
               </Link>
             </div>
