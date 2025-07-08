@@ -23,8 +23,8 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 												sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 700px"
 												alt={product.name}
 											/> */}
-                                            <Image
-												className="w-full bg-neutral-100 object-cover object-center transition-transform duration-300 group-hover:scale-105"
+                                            <img
+												className="w-full h-full bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
 												src={product.image}
 												width={768}
 												height={768}

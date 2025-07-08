@@ -114,14 +114,14 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
               className="bg-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 overflow-hidden border border-gray-100 group"
             >
               <Link href={`/product/${product.id}`} className="block">
-                <div className="aspect-square bg-gray-100 flex items-center justify-center cursor-pointer overflow-hidden">
-                  <div className="text-gray-400 text-center p-8 group-hover:scale-105 transition-transform duration-300">
-                    <svg className="w-16 h-16 mx-auto mb-3" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clipRule="evenodd" />
-                    </svg>
-                    <p className="text-sm font-medium">{product.name}</p>
-                  </div>
-                </div>
+                <img
+                  className="w-full h-full bg-neutral-100 object-contain object-center transition-transform duration-300 group-hover:scale-105"
+                  src={product.image}
+                  width={768}
+                  height={768}
+                  sizes="(max-width: 1024px) 100vw, (max-width: 1280px) 50vw, 700px"
+                  alt={product.name}
+                />
               </Link>
               
               <div className="p-4">
