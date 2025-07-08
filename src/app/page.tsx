@@ -24,7 +24,7 @@ function HomePage() {
     setSubscriptionStatus('idle');
 
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/booze/newsletter`, {
+      const response = await fetch(`https://back.holangikr.com/booze/newsletter`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

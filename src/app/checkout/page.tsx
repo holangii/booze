@@ -22,7 +22,7 @@ export default function CheckoutPage() {
     setIsSubmitting(true);
     
     try {
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/booze/checkout`, {
+      const response = await fetch(`https://back.holangikr.com/booze/checkout`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
