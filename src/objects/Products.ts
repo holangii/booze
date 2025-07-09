@@ -21,7 +21,7 @@ export const productsByCategories: {
     products: [
       {
         id: 1,
-        name: "Arrangé Volcanique Goyavier Ananas Piment",
+        name: "아랑제 볼카니크 구아바 파인애플 고추",
         price: 66000,
         image: "/isautier_volcanique.webp",
         contenance: "0.70L",
@@ -37,7 +37,7 @@ export const productsByCategories: {
       },
       {
         id: 2,
-        name: "Arrangé Café Vanille",
+        name: "아랑제 카페 바닐라",
         price: 52000,
         image: "/isautier_cafe_vanille.webp",
         allImages: [
@@ -52,7 +52,7 @@ export const productsByCategories: {
       },
       {
         id: 3,
-        name: "Arrangé Mangue Caramélisée",
+        name: "아랑제 망고 카라멜라이즈",
         price: 70000,
         image: "/isautier_mangue.webp",
         allImages: [
@@ -68,7 +68,7 @@ export const productsByCategories: {
       },
       {
         id: 4,
-        name: "Arrangé Mandarine Sauvage",
+        name: "아랑제 만다린 소바주",
         price: 52000,
         image: "/isautier_mandarine_sauvage.webp",
         allImages: [
@@ -83,7 +83,7 @@ export const productsByCategories: {
       },
       {
         id: 6,
-        name: "Arrangé Tropical Combava Menthe",
+        name: "아랑제 트로피칼 콤바바 민트",
         price: 66000,
         image: "/Isautier-Tropical.webp",
         allImages: [
@@ -98,7 +98,7 @@ export const productsByCategories: {
       },
       {
         id: 7,
-        name: "Arrangé Banane Flambée",
+        name: "아랑제 바나나 플랑베",
         price: 58000,
         image: "/isautier_banane.webp",
         allImages: [
@@ -113,7 +113,7 @@ export const productsByCategories: {
       },
       {
         id: 8,
-        name: "Arrangé Intense Citron Gingembre",
+        name: "아랑제 인텐스 레몬 생강",
         price: 60000,
         image: "/isautier_gingembre_citron.webp",
         allImages: [
@@ -128,7 +128,7 @@ export const productsByCategories: {
       },
       {
         id: 9,
-        name: "Arrangé Océanique Coco Vanille",
+        name: "아랑제 오세아니크 코코 바닐라",
         price: 60000,
         image: "/Isautier-Arrange-Oceanique-coco-vanille-2.webp",
         allImages: [
@@ -148,7 +148,7 @@ export const productsByCategories: {
     products: [
       {
         id: 10,
-        name: "55 Origines",
+        name: "55 올리진",
         price: 53000,
         image: "/55_origines.webp",
         allImages: ["/55_origines.webp"],
@@ -161,7 +161,7 @@ export const productsByCategories: {
       },
       {
         id: 11,
-        name: "Cannes brûlées",
+        name: "칸 브륄레",
         price: 59000,
         image: "/cannes_brulees.webp",
         allImages: ["/cannes_brulees.webp"],
@@ -175,7 +175,7 @@ export const productsByCategories: {
       },
       {
         id: 12,
-        name: "Double wood",
+        name: "더블 우드",
         price: 72000,
         image: "/double_wood.webp",
         allImages: ["/double_wood.webp"],
@@ -188,7 +188,7 @@ export const productsByCategories: {
       },
       {
         id: 13,
-        name: "Rhum Vieux de l'Océan",
+        name: "럼 비외 드 로세앙",
         price: 90000,
         image: "/rhum_vieux_de_l_ocean.webp",
         allImages: ["/rhum_vieux_de_l_ocean.webp"],
@@ -201,7 +201,7 @@ export const productsByCategories: {
       },
       {
         id: 14,
-        name: "Cuvée de l'Ocean",
+        name: "큐베 드 로세앙",
         price: 54000,
         image: "/cuvee_de_l_ocean.webp",
         allImages: ["/cuvee_de_l_ocean.webp"],
@@ -214,7 +214,7 @@ export const productsByCategories: {
       },
       {
         id: 15,
-        name: "Rhum blanc 50% 1L",
+        name: "럼 블랑 50% 1L",
         price: 58000,
         image: "/rhum_blanc_50_1L.webp",
         allImages: ["/rhum_blanc_50_1L.webp"],
@@ -227,7 +227,7 @@ export const productsByCategories: {
       },
       {
         id: 16,
-        name: "Triple Millésime 2006 - 2014 - 2016",
+        name: "트리플 밀레심 2006 - 2014 - 2016",
         price: 140000,
         image: "/triple_millesime.webp",
         allImages: ["/triple_millesime.webp"],
@@ -253,7 +253,7 @@ export const productsByCategories: {
       },
       {
         id: 18,
-        name: "Teeling Finish",
+        name: "틸링 피니시",
         price: 100000,
         image: "/teeling_finish.webp",
         allImages: ["/teeling_finish.webp"],
@@ -271,7 +271,7 @@ export const productsByCategories: {
     products: [
       {
         id: 19,
-        name: "Select Barrel",
+        name: "셀렉트 배럴",
         price: 94000,
         image: "/select_barrel.webp",
         allImages: ["/select_barrel.webp"],
@@ -284,7 +284,7 @@ export const productsByCategories: {
       },
       {
         id: 20,
-        name: "Rhum Vieux V.O 40%",
+        name: "럼 비외 V.O 40%",
         price: 72000,
         image: "/rhum_vieux_vo_40.webp",
         allImages: ["/rhum_vieux_vo_40.webp"],
@@ -297,7 +297,7 @@ export const productsByCategories: {
       },
       {
         id: 222,
-        name: "Ambre ESB",
+        name: "앰버 ESB",
         price: 54000,
         image: "/ambre_esb.jpg",
         allImages: ["/ambre_esb.jpg"],
@@ -310,7 +310,7 @@ export const productsByCategories: {
       },
       {
         id: 223,
-        name: "Punch coco",
+        name: "펀치 코코",
         price: 38000,
         image: "/punch_coco.webp",
         allImages: ["/punch_coco.webp"],
@@ -323,7 +323,7 @@ export const productsByCategories: {
       },
       {
         id: 21,
-        name: "Bana Canne",
+        name: "바나 칸",
         price: 84000,
         image: "/banana_canne.webp",
         allImages: ["/banana_canne.webp"],
@@ -336,7 +336,7 @@ export const productsByCategories: {
       },
       {
         id: 22,
-        name: "Créole Shrubb",
+        name: "크리올 슈럽",
         price: 92000,
         image: "/creole_shrubb.webp",
         allImages: ["/creole_shrubb.webp"],
@@ -349,7 +349,7 @@ export const productsByCategories: {
       },
       {
         id: 23,
-        name: "Mahina Coco",
+        name: "마히나 코코",
         price: 92000,
         image: "/mahina_coco.webp",
         allImages: ["/mahina_coco.webp"],
@@ -362,7 +362,7 @@ export const productsByCategories: {
       },
       {
         id: 24,
-        name: "Canne Bleue 2023",
+        name: "칸 블뢰 2023",
         price: 96000,
         image: "/canne_bleue_2023.webp",
         allImages: ["/canne_bleue_2023.webp"],
@@ -375,7 +375,7 @@ export const productsByCategories: {
       },
       {
         id: 25,
-        name: "Rhum blanc 1L 50°",
+        name: "럼 블랑 1L 50°",
         price: 96000,
         image: "/rhum_blanc_1L_50_clement.jpg",
         allImages: ["/rhum_blanc_1L_50_clement.jpg"],
