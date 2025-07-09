@@ -72,12 +72,12 @@ export default function CheckoutPage() {
                 {items.map((item) => (
                   <div key={item.id} className="flex justify-between items-center text-sm">
                     <span className="text-gray-700">{item.name} × {item.quantity}</span>
-                    <span className="font-medium text-gray-900">${(item.price * item.quantity).toFixed(2)}</span>
+                    <span className="font-medium text-gray-900">₩{(item.price * item.quantity).toLocaleString()}</span>
                   </div>
                 ))}
                 <div className="border-t pt-3 flex justify-between items-center font-semibold">
                   <span>Total</span>
-                  <span className="text-[#C97F17]">${getTotalPrice().toFixed(2)}</span>
+                  <span className="text-[#C97F17]">₩{getTotalPrice().toLocaleString()}</span>
                 </div>
               </div>
             </div>
@@ -167,14 +167,14 @@ export default function CheckoutPage() {
                       <div className="flex items-center mt-2">
                         <span className="text-sm text-gray-600">Qty: {item.quantity}</span>
                         <span className="mx-2 text-gray-400">•</span>
-                        <span className="text-sm font-medium text-[#C97F17]">${item.price.toFixed(2)} each</span>
+                        <span className="text-sm text-[#C97F17]">₩{item.price.toLocaleString()} each</span>
                       </div>
                     </div>
 
                     {/* Item Total */}
                     <div className="text-right">
                       <p className="text-lg font-semibold text-gray-900">
-                        ${(item.price * item.quantity).toFixed(2)}
+                        ₩{(item.price * item.quantity).toLocaleString()}
                       </p>
                     </div>
                   </div>
@@ -192,15 +192,15 @@ export default function CheckoutPage() {
               <div className="space-y-3 mb-6 pb-6 border-b border-gray-200">
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">Subtotal ({getTotalItems()} items)</span>
-                  <span className="text-gray-900">${getTotalPrice().toFixed(2)}</span>
+                  <span className="text-gray-900">₩{getTotalPrice().toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-600">Estimated Tax</span>
-                  <span className="text-gray-900">${(getTotalPrice() * 0.08).toFixed(2)}</span>
+                  <span className="text-gray-900">₩{(getTotalPrice() * 0.08).toLocaleString()}</span>
                 </div>
                 <div className="flex justify-between text-lg font-semibold pt-3 border-t border-gray-200">
                   <span className="text-gray-900">Total</span>
-                  <span className="text-[#C97F17]">${(getTotalPrice() * 1.08).toFixed(2)}</span>
+                  <span className="text-[#C97F17]">₩{(getTotalPrice() * 1.08).toLocaleString()}</span>
                 </div>
               </div>
 

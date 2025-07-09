@@ -95,7 +95,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             {/* Product Name and Price */}
             <div>
               <h1 className="text-3xl font-bold text-gray-900 mb-2">{product.name}</h1>
-              <p className="text-2xl font-bold text-[#C97F17]">${product.price}</p>
+              <p className="text-2xl text-[#C97F17]">₩{product.price.toLocaleString()}</p>
             </div>
 
             {/* Rum Info Component */}

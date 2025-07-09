@@ -75,7 +75,7 @@ const CartSidebar: React.FC = () => {
                     {/* Product Details */}
                     <div className="flex-1 min-w-0">
                       <h4 className="text-sm font-medium text-gray-900 truncate">{item.name}</h4>
-                      <p className="text-sm font-semibold text-[#C97F17]">${item.price.toFixed(2)}</p>
+                      <p className="text-sm text-[#C97F17]">₩{item.price.toLocaleString()}</p>
                     </div>
 
                     {/* Quantity Controls */}
@@ -124,7 +124,7 @@ const CartSidebar: React.FC = () => {
               {/* Total */}
               <div className="flex justify-between items-center text-lg font-semibold text-slate-900">
                 <span>Total:</span>
-                <span className="text-[#C97F17]">${getTotalPrice().toFixed(2)}</span>
+                <span className="text-[#C97F17]">₩{getTotalPrice().toLocaleString()}</span>
               </div>
 
               {/* Checkout Button */}

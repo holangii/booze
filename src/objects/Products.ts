@@ -22,7 +22,7 @@ export const productsByCategories: {
       {
         id: 1,
         name: "Arrangé Volcanique Goyavier Ananas Piment",
-        price: 33.00,
+        price: 66000,
         image: "/isautier_volcanique.webp",
         contenance: "0.70L",
         alcool: "30%",
@@ -33,12 +33,12 @@ export const productsByCategories: {
         ],
         category: "Isautier",
         description:
-          "Cette Douceur d’Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l’honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l’île associées à celle de la banane mûrie au soleil",
+          "Cette Douceur d'Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l'honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l'île associées à celle de la banane mûrie au soleil",
       },
       {
         id: 2,
         name: "Arrangé Café Vanille",
-        price: 25.99,
+        price: 52000,
         image: "/isautier_cafe_vanille.webp",
         allImages: [
           "/isautier_cafe_vanille.webp",
@@ -53,7 +53,7 @@ export const productsByCategories: {
       {
         id: 3,
         name: "Arrangé Mangue Caramélisée",
-        price: 35.00,
+        price: 70000,
         image: "/isautier_mangue.webp",
         allImages: [
           "/isautier_mangue.webp",
@@ -64,12 +64,12 @@ export const productsByCategories: {
         contenance: "0.50L",
         alcool: "37%",
         origin: "Réunion",
-        description: "Arrangé Mangue Caramélisée : L’arrangé Mangue Caramélisée est un Arrangé à base de rhum blanc, de jus de mangue et de caramel. Il est parfumé avec des arômes de vanille et de café. Il est idéal pour les soirées en famille ou en amitié.",
+        description: "Arrangé Mangue Caramélisée : L'arrangé Mangue Caramélisée est un Arrangé à base de rhum blanc, de jus de mangue et de caramel. Il est parfumé avec des arômes de vanille et de café. Il est idéal pour les soirées en famille ou en amitié.",
       },
       {
         id: 4,
         name: "Arrangé Mandarine Sauvage",
-        price: 25.99,
+        price: 52000,
         image: "/isautier_mandarine_sauvage.webp",
         allImages: [
           "/isautier_mandarine_sauvage.webp",
@@ -79,12 +79,12 @@ export const productsByCategories: {
         contenance: "0.50L",
         alcool: "40%",
         origin: "Réunion",
-        description: "Arrangé Mandarine Sauvage : L’arrangé Mandarine Sauvage est un Arrangé à base de rhum blanc, de jus de mandarine et de sucre. Il est parfumé avec des arômes de mandarine et de sucre. Il est idéal pour les soirées en famille ou en amitié.",
+        description: "Arrangé Mandarine Sauvage : L'arrangé Mandarine Sauvage est un Arrangé à base de rhum blanc, de jus de mandarine et de sucre. Il est parfumé avec des arômes de mandarine et de sucre. Il est idéal pour les soirées en famille ou en amitié.",
       },
       {
         id: 6,
         name: "Arrangé Tropical Combava Menthe",
-        price: 33.00,
+        price: 66000,
         image: "/Isautier-Tropical.webp",
         allImages: [
           "/Isautier-Tropical.webp",
@@ -94,12 +94,12 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "Réunion",
-        description: "Cette Douceur d’Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l’honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l’île associées à celle de la banane mûrie au soleil."
+        description: "Cette Douceur d'Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l'honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l'île associées à celle de la banane mûrie au soleil."
       },
       {
         id: 7,
         name: "Arrangé Banane Flambée",
-        price: 29.00,
+        price: 58000,
         image: "/isautier_banane.webp",
         allImages: [
           "/isautier_banane.webp",
@@ -114,7 +114,7 @@ export const productsByCategories: {
       {
         id: 8,
         name: "Arrangé Intense Citron Gingembre",
-        price: 29.90,
+        price: 60000,
         image: "/isautier_gingembre_citron.webp",
         allImages: [
           "/isautier_gingembre_citron.webp",
@@ -124,12 +124,12 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "Réunion",
-        description: "L’océan Indien, ses embruns marins. La Réunion, ses volcans, sa nature intense, ses sols incroyablement riches. Ici est née en 1845 la Maison Isautier, la référence des rhums de La Réunion. L’arrangé Intense comme les autres membres de la ‘Fresque de la Réunion ’"
+        description: "L'océan Indien, ses embruns marins. La Réunion, ses volcans, sa nature intense, ses sols incroyablement riches. Ici est née en 1845 la Maison Isautier, la référence des rhums de La Réunion. L'arrangé Intense comme les autres membres de la 'Fresque de la Réunion '"
       },
       {
         id: 9,
         name: "Arrangé Océanique Coco Vanille",
-        price: 29.90,
+        price: 60000,
         image: "/Isautier-Arrange-Oceanique-coco-vanille-2.webp",
         allImages: [
           "/Isautier-Arrange-Oceanique-coco-vanille-2.webp",
@@ -139,7 +139,7 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "Réunion",
-        description: "Cette Douceur d’Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l’honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l’île associées à celle de la banane mûrie au soleil."
+        description: "Cette Douceur d'Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l'honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l'île associées à celle de la banane mûrie au soleil."
       },
     ],
   },
@@ -149,7 +149,7 @@ export const productsByCategories: {
       {
         id: 10,
         name: "55 Origines",
-        price: 26.50,
+        price: 53000,
         image: "/55_origines.webp",
         allImages: ["/55_origines.webp"],
         category: "Trois Rivieres",
@@ -162,7 +162,7 @@ export const productsByCategories: {
       {
         id: 11,
         name: "Cannes brûlées",
-        price: 29.50,
+        price: 59000,
         image: "/cannes_brulees.webp",
         allImages: ["/cannes_brulees.webp"],
         category: "Trois Rivieres",
@@ -171,12 +171,12 @@ export const productsByCategories: {
         alcool: "43%",
         origin: "Martinique",
         description:
-          "Cette référence est un rhum parcellaire, provenant de la parcelle Figuier située à Rivière Salée, et monovarietal : la canne roseau. Les cannes ont été brûlées face au vent et jusqu’à mi-hauteur pour ralentir la propagation des flammes.",
+          "Cette référence est un rhum parcellaire, provenant de la parcelle Figuier située à Rivière Salée, et monovarietal : la canne roseau. Les cannes ont été brûlées face au vent et jusqu'à mi-hauteur pour ralentir la propagation des flammes.",
       },
       {
         id: 12,
         name: "Double wood",
-        price: 35.90,
+        price: 72000,
         image: "/double_wood.webp",
         allImages: ["/double_wood.webp"],
         category: "Trois Rivieres",
@@ -188,8 +188,8 @@ export const productsByCategories: {
       },
       {
         id: 13,
-        name: "Rhum Vieux de l’Océan",
-        price: 45.00,
+        name: "Rhum Vieux de l'Océan",
+        price: 90000,
         image: "/rhum_vieux_de_l_ocean.webp",
         allImages: ["/rhum_vieux_de_l_ocean.webp"],
         category: "Trois Rivieres",
@@ -197,12 +197,12 @@ export const productsByCategories: {
         alcohol_type: "Ambre",
         alcool: "54%",
         origin: "Martinique",
-        description: "Le Trois Rivières - Rhum Vieux de l’Océan est une cuvée audacieuse qui met en avant l’influence maritime sur le rhum martiniquais. Élaboré par la Plantation Trois Rivières, ce rhum agricole fait partie de la collection Les Éditions du Bar, destinée aux barmen et aux amateurs de créations originales. Son procédé unique de réduction à l’eau de mer, prélevée au large du Diamant et filtrée avec soin, lui confère une touche iodée distinctive."
+        description: "Le Trois Rivières - Rhum Vieux de l'Océan est une cuvée audacieuse qui met en avant l'influence maritime sur le rhum martiniquais. Élaboré par la Plantation Trois Rivières, ce rhum agricole fait partie de la collection Les Éditions du Bar, destinée aux barmen et aux amateurs de créations originales. Son procédé unique de réduction à l'eau de mer, prélevée au large du Diamant et filtrée avec soin, lui confère une touche iodée distinctive."
       },
       {
         id: 14,
         name: "Cuvée de l'Ocean",
-        price: 27.00,
+        price: 54000,
         image: "/cuvee_de_l_ocean.webp",
         allImages: ["/cuvee_de_l_ocean.webp"],
         category: "Trois Rivieres",
@@ -210,12 +210,12 @@ export const productsByCategories: {
         alcohol_type: "Blanc",
         alcool: "42%",
         origin: "Martinique",
-        description: "Trois Rivières Cuvée de l’Océan présente la caractéristique singulière d’avoir été élaborée à partir du seul jus des cannes à sucre élevées « les pieds dans l’eau » sur la parcelle ensoleillée de l’Anse Trabaud, située à l’extrême Sud de la Martinique"
+        description: "Trois Rivières Cuvée de l'Océan présente la caractéristique singulière d'avoir été élaborée à partir du seul jus des cannes à sucre élevées « les pieds dans l'eau » sur la parcelle ensoleillée de l'Anse Trabaud, située à l'extrême Sud de la Martinique"
       },
       {
         id: 15,
         name: "Rhum blanc 50% 1L",
-        price: 29.00,
+        price: 58000,
         image: "/rhum_blanc_50_1L.webp",
         allImages: ["/rhum_blanc_50_1L.webp"],
         category: "Trois Rivieres",
@@ -223,12 +223,12 @@ export const productsByCategories: {
         alcohol_type: "Blanc",
         alcool: "50%",
         origin: "Martinique",
-        description: "Trois Rivières - Rhum blanc 50% 1L est un incontournable des rhums agricoles martiniquais. Distillé selon le cahier des charges strict de l’AOC Martinique, il séduit par sa puissance aromatique, son équilibre entre notes végétales et iodées, et sa finale douce et persistante."
+        description: "Trois Rivières - Rhum blanc 50% 1L est un incontournable des rhums agricoles martiniquais. Distillé selon le cahier des charges strict de l'AOC Martinique, il séduit par sa puissance aromatique, son équilibre entre notes végétales et iodées, et sa finale douce et persistante."
       },
       {
         id: 16,
         name: "Triple Millésime 2006 - 2014 - 2016",
-        price: 69.90,
+        price: 140000,
         image: "/triple_millesime.webp",
         allImages: ["/triple_millesime.webp"],
         category: "Trois Rivieres",
@@ -241,7 +241,7 @@ export const productsByCategories: {
       {
         id: 17,
         name: "VSOP 40°",
-        price: 49.90,
+        price: 100000,
         image: "/trois_vsop.jpeg",
         allImages: ["/trois_vsop.jpeg"],
         category: "Trois Rivieres",
@@ -254,7 +254,7 @@ export const productsByCategories: {
       {
         id: 18,
         name: "Teeling Finish",
-        price: 49.90,
+        price: 100000,
         image: "/teeling_finish.webp",
         allImages: ["/teeling_finish.webp"],
         category: "Trois Rivieres",
@@ -262,7 +262,7 @@ export const productsByCategories: {
         alcohol_type: "Ambré",
         alcool: "43%",
         origin: "Martinique",
-        description: "Trois Rivières - Teeling Finish est un rhum vieux AOC Martinique d’au moins 3 ans, bénéficiant d’une finition originale de 8 mois en ex-fûts de whiskey irlandais Teeling. Cet affinage inédit enrichit son profil avec des notes maltées qui s’harmonisent parfaitement aux arômes fruités du rhum agricole."
+        description: "Trois Rivières - Teeling Finish est un rhum vieux AOC Martinique d'au moins 3 ans, bénéficiant d'une finition originale de 8 mois en ex-fûts de whiskey irlandais Teeling. Cet affinage inédit enrichit son profil avec des notes maltées qui s'harmonisent parfaitement aux arômes fruités du rhum agricole."
       },
     ],
   },
@@ -272,7 +272,7 @@ export const productsByCategories: {
       {
         id: 19,
         name: "Select Barrel",
-        price: 47.00,
+        price: 94000,
         image: "/select_barrel.webp",
         allImages: ["/select_barrel.webp"],
         category: "Clément",
@@ -285,7 +285,7 @@ export const productsByCategories: {
       {
         id: 20,
         name: "Rhum Vieux V.O 40%",
-        price: 36.00,
+        price: 72000,
         image: "/rhum_vieux_vo_40.webp",
         allImages: ["/rhum_vieux_vo_40.webp"],
         category: "Clément",
@@ -298,7 +298,7 @@ export const productsByCategories: {
       {
         id: 222,
         name: "Ambre ESB",
-        price: 27.00,
+        price: 54000,
         image: "/ambre_esb.jpg",
         allImages: ["/ambre_esb.jpg"],
         category: "Clément",
@@ -306,12 +306,12 @@ export const productsByCategories: {
         alcohol_type: "Blanc",
         alcool: "40%",
         origin: "Martinique",
-        description: "Le rhum ambré Clément est un rhum agricole martiniquais ayant vieilli pendant 12 mois dans des foudres de chêne, qui lui confèrent sa belle couleur dorée. Élaboré dans le respect des caractéristiques de l’AOC Martinique et distillé à partir du pur jus de la canne fraîche, ce rhum ambré met à l’honneur le savoir-faire de la Maison Clément, grand nom du rhum martiniquais."
+        description: "Le rhum ambré Clément est un rhum agricole martiniquais ayant vieilli pendant 12 mois dans des foudres de chêne, qui lui confèrent sa belle couleur dorée. Élaboré dans le respect des caractéristiques de l'AOC Martinique et distillé à partir du pur jus de la canne fraîche, ce rhum ambré met à l'honneur le savoir-faire de la Maison Clément, grand nom du rhum martiniquais."
       },
       {
         id: 223,
         name: "Punch coco",
-        price: 19.00,
+        price: 38000,
         image: "/punch_coco.webp",
         allImages: ["/punch_coco.webp"],
         category: "Clément",
@@ -324,7 +324,7 @@ export const productsByCategories: {
       {
         id: 21,
         name: "Bana Canne",
-        price: 42.00,
+        price: 84000,
         image: "/banana_canne.webp",
         allImages: ["/banana_canne.webp"],
         category: "Clément",
@@ -337,7 +337,7 @@ export const productsByCategories: {
       {
         id: 22,
         name: "Créole Shrubb",
-        price: 46.00,
+        price: 92000,
         image: "/creole_shrubb.webp",
         allImages: ["/creole_shrubb.webp"],
         category: "Clément",
@@ -350,7 +350,7 @@ export const productsByCategories: {
       {
         id: 23,
         name: "Mahina Coco",
-        price: 46.00,
+        price: 92000,
         image: "/mahina_coco.webp",
         allImages: ["/mahina_coco.webp"],
         category: "Clément",
@@ -363,7 +363,7 @@ export const productsByCategories: {
       {
         id: 24,
         name: "Canne Bleue 2023",
-        price: 48.00,
+        price: 96000,
         image: "/canne_bleue_2023.webp",
         allImages: ["/canne_bleue_2023.webp"],
         category: "Clément",
@@ -376,7 +376,7 @@ export const productsByCategories: {
       {
         id: 25,
         name: "Rhum blanc 1L 50°",
-        price: 48.00,
+        price: 96000,
         image: "/rhum_blanc_1L_50_clement.jpg",
         allImages: ["/rhum_blanc_1L_50_clement.jpg"],
         category: "Clément",

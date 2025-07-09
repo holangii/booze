@@ -27,10 +27,10 @@ export const ProductList = ({ products }: { products: Product[] }) => {
 									)}
 									<div className="p-2">
 										<h2 className="text-lg font-semibold text-neutral-800 group-hover:text-[#C97F17] transition-colors duration-200">{product.name}</h2>
-										<footer className="text-base font-medium text-neutral-900">
+										<footer className="text-base font-medium text-[#C97F17]">
 											{product.price && (
 												<p>
-													${product.price.toFixed(2)}
+													₩{product.price.toLocaleString()}
 												</p>
 											)}
 										</footer>
