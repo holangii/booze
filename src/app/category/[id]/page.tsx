@@ -2,7 +2,6 @@
 
 import { use } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { Header } from '@/components/Header';
 import CartSidebar from "@/components/CartSidebar";
 import { productsByCategories } from "@/objects/Products";
