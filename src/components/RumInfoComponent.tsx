@@ -7,12 +7,14 @@ type RumInfoComponentProps = {
   bottleSize?: string;      // e.g. "1.0L"
   degree?: string;          // e.g. "50°"
   color?: string;           // e.g. "Blanc"
-  origin?: "Martinique" | "Réunion";
+  origin?: "Martinique" | "Réunion" | "레위니옹" | "마르티니크";
 };
 
-const ORIGIN_IMAGES: Record<"Martinique" | "Réunion", { src: string; alt: string }> = {
+const ORIGIN_IMAGES: Record<"Martinique" | "Réunion" | "레위니옹" | "마르티니크", { src: string; alt: string }> = {
   Martinique: { src: "/martinique.webp", alt: "Martinique" },
   Réunion: { src: "/reunion.png", alt: "Réunion" },
+  "레위니옹": { src: "/reunion.png", alt: "레위니옹" },
+  "마르티니크": { src: "/martinique.webp", alt: "마르티니크" },
 };
 
 const RumInfoComponent = ({
