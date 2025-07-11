@@ -85,7 +85,7 @@ function HomePage() {
       <section
         className="mt-8 max-w-7xl mx-auto flex justify-center items-center rounded-lg py-8 sm:py-12"
         style={{
-          backgroundImage: "url('/rhum-playa.jpg')",
+          backgroundImage: "url('/rhum_playa.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -95,8 +95,8 @@ function HomePage() {
           <div className="absolute inset-0 bg-gray-900/20 rounded-lg pointer-events-none" aria-hidden="true"></div>
           {/* Overlay for text visibility */}
           <div className="max-w-md space-y-4 relative z-10">
-            <h2 className="text-white text-3xl font-bold tracking-tight md:text-4xl">{"Discover Out Latest Selection"}</h2>
-            <p className="text-white">{"Explore our carefully selected products for your alcoholism."}</p>
+            <h2 className="text-white text-3xl font-bold tracking-tight md:text-4xl">{"최신 셀렉션을 만나보세요"}</h2>
+            <p className="text-white">{"프리미엄 수제 럼의 특별한 셀렉션을 만나보세요"}</p>
           </div>
         </div>
       </section>
@@ -105,10 +105,10 @@ function HomePage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-            Shop by Category
+            카테고리별 제품
           </h2>
           <p className="text-lg text-gray-600">
-            Explore our curated collection of premium products
+            프리미엄 수제 럼의 특별한 셀렉션을 만나보세요
           </p>
         </div>
 
@@ -118,7 +118,7 @@ function HomePage() {
             <div className="flex items-center justify-between mb-8">
               <h3 className="text-2xl font-bold text-gray-900">{category.name}</h3>
               <Link href={`/category/${category.name}`} className="text-[#C97F17] hover:text-blue-800 font-medium">
-                View All →
+                모두 보기 →
               </Link>
             </div>
             
@@ -165,15 +165,15 @@ function HomePage() {
       {/* Newsletter Section */}
       <div className="bg-gray-100 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Stay Updated</h3>
-          <p className="text-gray-600 mb-8">Subscribe to our newsletter for the latest products and exclusive offers</p>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">뉴스레터 구독</h3>
+          <p className="text-gray-600 mb-8">최신 제품과 특별 할인 정보를 받아보세요</p>
           <form onSubmit={handleNewsletterSubmit} className="max-w-md mx-auto">
             <div className="flex gap-2 mb-4">
               <input 
                 type="email" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your email" 
+                placeholder="이메일을 입력해주세요" 
                 className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#C97F17] text-slate-900"
                 disabled={isSubscribing}
                 required
@@ -183,16 +183,16 @@ function HomePage() {
                 disabled={isSubscribing || !email}
                 className="bg-[#C97F17] text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition duration-300 disabled:bg-gray-400 disabled:cursor-not-allowed"
               >
-                {isSubscribing ? 'Subscribing...' : 'Subscribe'}
+                {isSubscribing ? '구독 중...' : '구독하기'}
               </button>
             </div>
             
             {/* Status Messages */}
             {subscriptionStatus === 'success' && (
-              <p className="text-green-600 text-sm">Successfully subscribed to our newsletter!</p>
+              <p className="text-green-600 text-sm">뉴스레터 구독이 완료되었습니다!</p>
             )}
             {subscriptionStatus === 'error' && (
-              <p className="text-red-600 text-sm">Failed to subscribe. Please check your email and try again.</p>
+              <p className="text-red-600 text-sm">구독에 실패했습니다. 이메일을 확인하고 다시 시도해주세요.</p>
             )}
           </form>
         </div>
@@ -204,7 +204,7 @@ function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div>
               <h4 className="text-lg font-semibold mb-4">Mashija</h4>
-              <p className="text-gray-400">Your one-stop shop for amazing products at unbeatable prices.</p>
+              <p className="text-gray-400">마르티니크와 레위니옹에서 열정과 전통으로 만들어진 최고급 럼의 특별한 셀렉션을 만나보세요.</p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">

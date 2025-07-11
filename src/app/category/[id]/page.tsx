@@ -70,8 +70,8 @@ export default function CategoryPage({ params }: { params: Promise<{ id: string 
           <div className="absolute inset-0 bg-white/20 rounded-lg pointer-events-none" aria-hidden="true"></div>
           {/* Overlay for text visibility */}
           <div className="max-w-md space-y-2 sm:space-y-4 relative z-10">
-            <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">{"Discover Out Latest Selection"}</h2>
-            <p className="text-white text-sm sm:text-base">{"Explore our carefully selected products for your alcoholism."}</p>
+            <h2 className="text-white text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">{"프리미엄 수제 럼의 특별한 셀렉션을 만나보세요"}</h2>
+            <p className="text-white text-sm sm:text-base">{"프리미엄 수제 럼의 특별한 셀렉션을 만나보세요"}</p>
           </div>
         </div>
       </section>

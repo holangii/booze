@@ -37,7 +37,7 @@ const CartSidebar: React.FC = () => {
           {/* Header */}
           <div className="flex items-center justify-between p-4 border-b">
             <h2 className="text-xl font-semibold text-gray-900">
-              Shopping Cart ({getTotalItems()})
+              장바구니 ({getTotalItems()})
             </h2>
             <button
               onClick={closeCart}
@@ -54,8 +54,8 @@ const CartSidebar: React.FC = () => {
             {items.length === 0 ? (
               <div className="text-center py-8">
                 <ShoppingCart className="w-16 h-16 mx-auto text-gray-300 mb-4" />
-                <p className="text-gray-500 text-lg mb-2">Your cart is empty</p>
-                <p className="text-gray-400 text-sm">Add some products to get started!</p>
+                <p className="text-gray-500 text-lg mb-2">장바구니가 비어있습니다</p>
+                <p className="text-gray-400 text-sm">상품을 추가해주세요!</p>
               </div>
             ) : (
               <div className="space-y-4">
@@ -123,14 +123,14 @@ const CartSidebar: React.FC = () => {
 
               {/* Total */}
               <div className="flex justify-between items-center text-lg font-semibold text-slate-900">
-                <span>Total:</span>
+                <span>총 금액:</span>
                 <span className="text-[#C97F17]">₩{getTotalPrice().toLocaleString()}</span>
               </div>
 
               {/* Checkout Button */}
               <Link href="/checkout">
                 <button className="w-full bg-[#C97F17] text-white py-3 px-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors  hover:cursor-pointer">
-                  Proceed to Checkout
+                  결제하기
                 </button>
               </Link>
             </div>
