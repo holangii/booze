@@ -25,9 +25,9 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Product Not Found</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">상품을 찾을 수 없습니다</h2>
           <Link href="/" className="text-[#C97F17] hover:text-blue-800">
-            ← Back to Home
+            ← 홈으로 돌아가기
           </Link>
         </div>
       </div>
@@ -163,7 +163,7 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
                 className="w-full bg-[#C97F17] text-white py-4 px-6 rounded-lg font-semibold hover:bg-blue-700 transition duration-300 flex items-center justify-center space-x-2"
               >
                 <ShoppingCart className="w-5 h-5" />
-                <span>Add {quantity} to Cart</span>
+                <span>장바구니에 {quantity}개 담기</span>
               </button>
             </div>
 
