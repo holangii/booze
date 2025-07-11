@@ -64,7 +64,8 @@ export const productsByCategories: {
         contenance: "0.50L",
         alcool: "37%",
         origin: "레위니옹",
-        description: "Arrangé Mangue Caramélisée : L'arrangé Mangue Caramélisée est un Arrangé à base de rhum blanc, de jus de mangue et de caramel. Il est parfumé avec des arômes de vanille et de café. Il est idéal pour les soirées en famille ou en amitié.",
+        description:
+          "아랑제 망고 카라멜라이즈: 아랑제 망고 카라멜라이즈는 화이트 럼, 망고 주스, 카라멜을 베이스로 한 아랑제입니다. 바닐라와 커피 향이 가미되어 있습니다. 가족이나 친구와 함께하는 저녁에 이상적입니다.",
       },
       {
         id: 4,
@@ -79,7 +80,8 @@ export const productsByCategories: {
         contenance: "0.50L",
         alcool: "40%",
         origin: "레위니옹",
-        description: "Arrangé Mandarine Sauvage : L'arrangé Mandarine Sauvage est un Arrangé à base de rhum blanc, de jus de mandarine et de sucre. Il est parfumé avec des arômes de mandarine et de sucre. Il est idéal pour les soirées en famille ou en amitié.",
+        description:
+          "아랑제 만다린 소바주: 아랑제 만다린 소바주는 화이트 럼, 만다린 주스, 설탕을 베이스로 한 아랑제입니다. 만다린과 설탕 향이 가미되어 있습니다. 가족이나 친구와 함께하는 저녁에 이상적입니다.",
       },
       {
         id: 6,
@@ -94,7 +96,8 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "레위니옹",
-        description: "Cette Douceur d'Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l'honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l'île associées à celle de la banane mûrie au soleil."
+        description:
+          "이 '두스 드 아랑제(Douceur d'Arrangé)'는 잘 익은 바나나의 달콤함과 코코넛의 고소함에 중점을 둡니다. 레위니옹의 열대적인 특성은 섬의 전형적인 '봉봉 코코'를 연상시키는 맛과 햇볕에 익은 바나나의 맛이 어우러져 강조됩니다.",
       },
       {
         id: 7,
@@ -109,7 +112,8 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "레위니옹",
-        description: "Les arômes de bananes flambées se marient parfaitement dans cet Arrangé original. Pour savourer pleinement notre Arrangé Banane Flambée, conservez la bouteille au congélateur et servez bien frappé avec votre café ou patisserie !"
+        description:
+          "플랑베한 바나나의 아로마가 이 독창적인 아랑제에 완벽하게 어우러집니다. 아랑제 바나나 플랑베를 제대로 즐기려면 병을 냉동실에 보관하고 커피나 페이스트리와 함께 차갑게 드세요!",
       },
       {
         id: 8,
@@ -124,7 +128,8 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "레위니옹",
-        description: "L'océan Indien, ses embruns marins. La Réunion, ses volcans, sa nature intense, ses sols incroyablement riches. Ici est née en 1845 la Maison Isautier, la référence des rhums de La Réunion. L'arrangé Intense comme les autres membres de la 'Fresque de la Réunion '"
+        description:
+          "인도양, 그 바다의 물보라. 레위니옹, 그 화산, 강렬한 자연, 놀랍도록 풍부한 토양. 이곳에서 1845년 레위니옹 럼의 기준이 되는 메종 이소티에가 탄생했습니다. '프레스크 드 라 레위니옹'의 다른 멤버들과 같은 강렬한 아랑제입니다.",
       },
       {
         id: 9,
@@ -139,7 +144,8 @@ export const productsByCategories: {
         contenance: "0.70L",
         alcool: "30%",
         origin: "레위니옹",
-        description: "Cette Douceur d'Arrangé mise sur la gourmandise de la banane bien mûre et de la noix de coco. La tropicalité de La Réunion est mise à l'honneur par ces saveurs qui rappellent les « bonbons coco » typiques de l'île associées à celle de la banane mûrie au soleil."
+        description:
+          "이 '두스 드 아랑제(Douceur d'Arrangé)'는 잘 익은 바나나의 달콤함과 코코넛의 고소함에 중점을 둡니다. 레위니옹의 열대적인 특성은 섬의 전형적인 '봉봉 코코'를 연상시키는 맛과 햇볕에 익은 바나나의 맛이 어우러져 강조됩니다.",
       },
     ],
   },
@@ -157,7 +163,8 @@ export const productsByCategories: {
         alcohol_type: "화이트",
         alcool: "55%",
         origin: "마르티니크",
-        description: "La référence de la gamme a été repensée à travers un processus de réduction tout en douceur. Exit le brassage mécanique généralement utilisé. Daniel Baudin, le maître de chai, a mis en place une réduction goutte par goutte sur une durée de 5 mois afin de garder la richesse aromatique du jus."
+        description:
+          "이 제품군의 기준은 매우 부드러운 환원 과정을 통해 재설계되었습니다. 일반적으로 사용되는 기계적 혼합 방식은 사용하지 않았습니다. 셀러 마스터인 다니엘 보댕은 주스의 풍부한 아로마를 유지하기 위해 5개월에 걸쳐 한 방울씩 환원하는 방식을 도입했습니다.",
       },
       {
         id: 11,
@@ -171,7 +178,7 @@ export const productsByCategories: {
         alcool: "43%",
         origin: "마르티니크",
         description:
-          "Cette référence est un rhum parcellaire, provenant de la parcelle Figuier située à Rivière Salée, et monovarietal : la canne roseau. Les cannes ont été brûlées face au vent et jusqu'à mi-hauteur pour ralentir la propagation des flammes.",
+          "이 레퍼런스는 리비에르 살레에 위치한 피기에 구획에서 생산된 구획 럼이며, 단일 품종인 로조 케인으로 만들어졌습니다. 사탕수수는 바람을 마주하고 불길의 확산을 늦추기 위해 중간 높이까지 태워졌습니다.",
       },
       {
         id: 12,
@@ -184,7 +191,8 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "43%",
         origin: "마르티니크",
-        description: "Double Wood est un rhum agricole, élevé sous bois. Après une fermentation en cuves ouvertes et sa distillation en colonne créole, ce rhum passe 7 mois en foudre américain puis 9 mois en petits fûts français ayant contenu du whisky. Sa relative jeunesse le situe à mi-chemin entre un rhum blanc et un rhum vieux, il garde la fraîcheur de la canne mais développe une certaine rondeur."
+        description:
+          "더블 우드는 오크통에서 숙성된 농업 럼입니다. 개방형 탱크에서 발효하고 크리올 컬럼에서 증류한 후, 이 럼은 미국산 대형 오크통에서 7개월, 위스키를 담았던 프랑스산 소형 오크통에서 9개월을 보냅니다. 비교적 숙성 기간이 짧아 화이트 럼과 숙성 럼의 중간에 위치하며, 사탕수수의 신선함을 유지하면서도 어느 정도의 부드러움을 지니고 있습니다.",
       },
       {
         id: 13,
@@ -197,7 +205,8 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "54%",
         origin: "마르티니크",
-        description: "Le Trois Rivières - Rhum Vieux de l'Océan est une cuvée audacieuse qui met en avant l'influence maritime sur le rhum martiniquais. Élaboré par la Plantation Trois Rivières, ce rhum agricole fait partie de la collection Les Éditions du Bar, destinée aux barmen et aux amateurs de créations originales. Son procédé unique de réduction à l'eau de mer, prélevée au large du Diamant et filtrée avec soin, lui confère une touche iodée distinctive."
+        description:
+          "트루아 리비에르 - 럼 비외 드 로세앙은 마르티니크 럼에 대한 해양의 영향을 강조하는 대담한 퀴베입니다. 플랜테이션 트루아 리비에르에서 생산된 이 농업 럼은 바텐더와 독창적인 창작물을 좋아하는 사람들을 위한 '레 제디시옹 뒤 바' 컬렉션의 일부입니다. 디아망 앞바다에서 채취하여 세심하게 여과한 바닷물로 희석하는 독특한 공정을 통해 독특한 요오드 향을 선사합니다.",
       },
       {
         id: 14,
@@ -210,7 +219,8 @@ export const productsByCategories: {
         alcohol_type: "화이트",
         alcool: "42%",
         origin: "마르티니크",
-        description: "Trois Rivières Cuvée de l'Océan présente la caractéristique singulière d'avoir été élaborée à partir du seul jus des cannes à sucre élevées « les pieds dans l'eau » sur la parcelle ensoleillée de l'Anse Trabaud, située à l'extrême Sud de la Martinique"
+        description:
+          "트루아 리비에르 퀴베 드 로세앙은 마르티니크 최남단에 위치한 햇볕이 잘 드는 앙스 트라보 구획에서 '물에 발을 담그고' 자란 사탕수수 주스만으로 만들어졌다는 독특한 특징을 가지고 있습니다.",
       },
       {
         id: 15,
@@ -223,7 +233,8 @@ export const productsByCategories: {
         alcohol_type: "화이트",
         alcool: "50%",
         origin: "마르티니크",
-        description: "Trois Rivières - Rhum blanc 50% 1L est un incontournable des rhums agricoles martiniquais. Distillé selon le cahier des charges strict de l'AOC Martinique, il séduit par sa puissance aromatique, son équilibre entre notes végétales et iodées, et sa finale douce et persistante."
+        description:
+          "트루아 리비에르 - 럼 블랑 50% 1L는 마르티니크 농업 럼의 필수품입니다. AOC 마르티니크의 엄격한 규정에 따라 증류되어 강력한 아로마, 식물성 노트와 요오드 노트 사이의 균형, 부드럽고 오래 지속되는 피니시로 매혹적입니다.",
       },
       {
         id: 16,
@@ -236,7 +247,8 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "42%",
         origin: "마르티니크",
-        description: "Découvrez le Trois Rivières Triple Millésime, une symphonie de millésimes rares, révélateur du génie de Daniel Baudin. La rencontre de 2006, 2014 et 2016 promet une dégustation inoubliable."
+        description:
+          "다니엘 보댕의 천재성을 드러내는 희귀한 빈티지의 교향곡인 트루아 리비에르 트리플 밀레짐을 만나보세요. 2006, 2014, 2016년의 만남은 잊을 수 없는 시음을 약속합니다.",
       },
       {
         id: 17,
@@ -249,7 +261,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "40%",
         origin: "마르티니크",
-        description: "Trois Rivières VSOP Réserve Spéciale se distingue par sa personalité unique, sa parfaite suavité et sa délicate opulence."
+        description: "트루아 리비에르 VSOP 레제르브 스페시알은 독보적인 개성과 완벽한 부드러움 그리고 섬세한 풍미의 풍요로움으로 차별화됩니다."
       },
       {
         id: 18,
@@ -262,7 +274,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "43%",
         origin: "마르티니크",
-        description: "Trois Rivières - Teeling Finish est un rhum vieux AOC Martinique d'au moins 3 ans, bénéficiant d'une finition originale de 8 mois en ex-fûts de whiskey irlandais Teeling. Cet affinage inédit enrichit son profil avec des notes maltées qui s'harmonisent parfaitement aux arômes fruités du rhum agricole."
+        description: "트루아 리비에르 - 틸링 피니시는 최소 3년 숙성된 마르티니크 AOC 올드 럼으로, 아일랜드 틸링 위스키의 전용 배럴에서 8개월간의 독특한 피니싱 과정을 거쳤습니다. 이러한 특별한 숙성 과정은 농업 럼의 과일향과 완벽한 조화를 이루는 몰트 노트로 풍미를 더욱 풍부하게 만듭니다."
       },
     ],
   },
@@ -280,7 +292,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "40%",
         origin: "마르티니크",
-        description: "Ce Rhum Vieux Clément est issu d'un assemblage de Rhums Agricoles ayant vieillis pendant un minimum de 3 ans dans des fûts de chêne neufs ayant eu des chauffes particulières et spécialement sélectionnés par le maître de chais."
+        description: "이 클레멘트 올드 럼은 최소 3년간 숙성된 아그리콜 럼들의 블렌딩으로 만들어졌으며, 특별한 토스팅 처리가 된 새로운 오크 배럴에서 숙성되어 셀러 마스터가 특별히 선별한 제품입니다."
       },
       {
         id: 20,
@@ -293,7 +305,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "40%",
         origin: "마르티니크",
-        description: "Ce Rhum Vieux V.O 40% est issu d'un assemblage de Rhums Agricoles ayant vieillis pendant un minimum de 3 ans dans des fûts de chêne neufs ayant eu des chauffes particulières et spécialement sélectionnés par le maître de chais."
+        description: "이 럼 비외 V.O 40%는 최소 3년간 숙성된 아그리콜 럼들의 블렌딩으로 만들어졌으며, 특별한 토스팅 처리가 된 새로운 오크 배럴에서 숙성되어 셀러 마스터가 특별히 선별한 제품입니다."
       },
       {
         id: 222,
@@ -306,7 +318,7 @@ export const productsByCategories: {
         alcohol_type: "화이트",
         alcool: "40%",
         origin: "마르티니크",
-        description: "Le rhum ambré Clément est un rhum agricole martiniquais ayant vieilli pendant 12 mois dans des foudres de chêne, qui lui confèrent sa belle couleur dorée. Élaboré dans le respect des caractéristiques de l'AOC Martinique et distillé à partir du pur jus de la canne fraîche, ce rhum ambré met à l'honneur le savoir-faire de la Maison Clément, grand nom du rhum martiniquais."
+        description: "클레멘트 앰버 럼은 12개월간 오크 대형 배럴에서 숙성된 마르티니크 아그리콜 럼으로, 아름다운 황금빛 색상을 띠고 있습니다. 마르티니크 AOC 특성을 존중하여 제조되고 신선한 사탕수수 순수 주스로 증류된 이 앰버 럼은 마르티니크 럼의 유명한 브랜드인 클레멘트 하우스의 전문 기술을 돋보이게 합니다."
       },
       {
         id: 223,
@@ -319,7 +331,7 @@ export const productsByCategories: {
         alcohol_type: "Arrangé",
         alcool: "18%",
         origin: "마르티니크",
-        description: "Ce punch est un savoureux mélange de rhum Clément, lait et noix de coco. Le Punch  Coco peut se boire frais sur glace, ou peut être utilisé dans la réalisation de cocktails."
+        description: "이 펀치는 클레멘트 럼, 우유, 코코넛의 맛있는 혼합물입니다. 펀치 코코는 얼음과 함께 시원하게 마시거나 칵테일 제조에 사용할 수 있습니다."
       },
       {
         id: 21,
@@ -332,7 +344,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "25%",
         origin: "마르티니크",
-        description: "Plongez dans l'univers exotique de Clément Bana Canne, une liqueur intense alliant rhums blancs et vieux. Ses notes de banane fraîche, subtilement relevées d'épices et de végétal, offrent une dégustation délicieusement ronde et fruitée jusqu'à la dernière gorgée."
+        description: "클레멘트 바나 칸의 이국적인 세계로 빠져보세요. 화이트 럼과 올드 럼을 혼합한 강렬한 리큐어입니다. 신선한 바나나 향과 미묘한 향신료 및 식물성 향이 어우러져 마지막 한 모금까지 맛있게 둥글고 과일 향이 나는 테이스팅을 선사합니다."
       },
       {
         id: 22,
@@ -345,7 +357,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "40%",
         origin: "마르티니크",
-        description: "Clément - Créole Shrubb est une liqueur intense et aromatique à base de rhums agricoles, de sirop de sucre de canne et de zestes d'oranges macérés. Elle offre des notes d'agrumes, de mandarine et de fleur d'oranger, idéale pure, sur glace ou en cocktails."
+        description: "클레멘트 크리올 슈럽은 아그리콜 럼, 사탕수수 시럽, 침출된 오렌지 껍질을 베이스로 한 강렬하고 향긋한 리큐어입니다. 감귤, 만다린, 오렌지 꽃 향을 제공하며, 순수하게 마시거나 얼음과 함께 또는 칵테일로 마시기에 이상적입니다."
       },
       {
         id: 23,
@@ -358,7 +370,7 @@ export const productsByCategories: {
         alcohol_type: "앰버",
         alcool: "25%",
         origin: "마르티니크",
-        description: "Élaborée à partir de rhum agricole et de sirop de sucre de canne, cette liqueur de noix de coco offre des arômes intenses et une bouche équilibrée entre rondeur et fraîcheur. Une véritable invitation à la dégustation."
+        description: "아그리콜 럼과 사탕수수 시럽으로 만들어진 이 코코넛 리큐르는 강렬한 아로마와 함께, 풍부함과 상쾌함이 조화를 이루는 균형 잡힌 맛을 선사합니다. 진정한 테이스팅의 즐거움을 선사하는 특별한 한 잔입니다."
       },
       {
         id: 24,
@@ -371,7 +383,7 @@ export const productsByCategories: {
         alcohol_type: "화이트",
         alcool: "50%",
         origin: "마르티니크",
-        description: "Issu d'une distillation minutieuse pendant une saison exceptionnellement sèche, ce rhum AOC Martinique révèle des notes florales captivantes de rose et jasmin, enrichies d'arômes tropicaux de mangue et banane."
+        description: "이 마르티니크 AOC 럼은 유난히 건조했던 시즌 동안 정성스럽게 증류되어 탄생했습니다. 장미와 자스민의 매혹적인 플로럴 향기에 망고와 바나나의 열대 과일 아로마가 어우러져 풍부한 향미를 자랑합니다."
       },
       {
         id: 25,
@@ -384,7 +396,7 @@ export const productsByCategories: {
         alcohol_type: "화이트",
         alcool: "32%",
         origin: "마르티니크",
-        description: "Ce rhum blanc agricole est issu du jus frais des cannes à sucre de l'Habitation Clément. Broyage, fermentation, distillation à bas degré (70°) pour conserver un maximum d'arômes. Ses puissants arômes laissent exalter les notes fraîches, florales, citronnées et végétales des différentes variétés de cannes à sucre qui le composent. Il se consomme en long drink ou en Ti Punch."
+        description: "이 화이트 아그리콜 럼은 클레망 농장에서 재배된 신선한 사탕수수즙으로 만들어졌습니다. 압착, 발효, 저도(70도) 증류 과정을 거쳐 최대한의 향을 보존했습니다. 강렬한 향기 속에 신선하고 꽃향기 가득한 아로마, 레몬 계열의 상큼함, 다양한 사탕수수 품종에서 오는 식물성 노트가 조화를 이룹니다. 롱 드링크나 티퐁슈(Ti Punch)로 즐기기에 이상적입니다."
       },
     ],
   },

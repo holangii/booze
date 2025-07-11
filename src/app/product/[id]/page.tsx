@@ -107,9 +107,14 @@ export default function ProductDetail({ params }: { params: Promise<{ id: string
             />
 
             {/* Product Description */}
-            <div>
-              <h3 className="text-lg font-semibold text-gray-900 mb-2">Description</h3>
-              <p className="text-gray-600 leading-relaxed">{product.description}</p>
+            <div className="mt-10">
+              <div className="border-t border-gray-200 pt-10">
+                {/* Product Description */}
+                <div className="prose prose-sm text-gray-500">
+                  <h3 className="text-lg font-semibold text-gray-900 mb-2">상품 설명</h3>
+                  <p className="text-gray-600 leading-relaxed">{product.description}</p>
+                </div>
+              </div>
             </div>
 
             {/* Features */}
